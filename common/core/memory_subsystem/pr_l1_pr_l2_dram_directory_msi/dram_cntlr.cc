@@ -17,7 +17,7 @@
 #endif
 
 class TimeDistribution;
-
+using namespace std;
 namespace PrL1PrL2DramDirectoryMSI
 {
 
@@ -28,6 +28,7 @@ DramCntlr::DramCntlr(MemoryManagerBase* memory_manager,
    , m_reads(0)
    , m_writes(0)
 {
+   cout << "[LINGXI]: in /common/core/mem_sub/pr_l1_pr_l2_drm_dir_msi/dram_cntrl. core_id: " << memory_manager->getCore()->getId() << endl;
    m_dram_perf_model = DramPerfModel::createDramPerfModel(
          memory_manager->getCore()->getId(),
          cache_block_size);
@@ -67,7 +68,10 @@ DramCntlr::getDataFromDram(IntPtr address, core_id_t requester, Byte* data_buf, 
       memcpy((void*) data_buf, (void*) m_data_map[address], getCacheBlockSize());
    }
 
+   
    SubsecondTime dram_access_latency = runDramPerfModel(requester, now, address, READ, perf);
+   //cout << "[LINGXI]: Dram_cnltr - getDataFromDram(). dram_access_latency is: " << to_string(dram_access_latency.getNS()) << endl;
+   
 
    ++m_reads;
    #ifdef ENABLE_DRAM_ACCESS_COUNT
@@ -108,6 +112,12 @@ DramCntlr::putDataToDram(IntPtr address, core_id_t requester, Byte* data_buf, Su
 SubsecondTime
 DramCntlr::runDramPerfModel(core_id_t requester, SubsecondTime time, IntPtr address, DramCntlrInterface::access_t access_type, ShmemPerf *perf)
 {
+	if(requester != 0){
+//	cout << "[LINGXI]: in pr1_pr2_dram_cntlr: core_id: " << to_string(requester) << 
+//	        " addr: " << to_string(address) << 
+//		" type: " << to_string(access_type) << endl;
+	}
+
    UInt64 pkt_size = getCacheBlockSize();
    SubsecondTime dram_access_latency = m_dram_perf_model->getAccessLatency(time, pkt_size, requester, address, access_type, perf);
    return dram_access_latency;

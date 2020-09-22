@@ -1,8 +1,10 @@
 TARGET=pi
 include ../shared/Makefile.shared
 
-MPICC=mpicc
-MPILD=mpicc
+MPICC=mpicc.mpich
+MPILD=mpicc.mpich
+#MPICC=mpicc
+#MPILD=mpicc
 MPIRUN=mpirun
 
 MPI_CFLAGS=$(GRAPHITE_CFLAGS)
@@ -16,7 +18,7 @@ pi: pi_mpi.o Makefile
 
 
 run_$(TARGET):
-	../../run-sniper --mpi -n 4 -c gainestown -- ./pi
+	../../run-sniper --mpi -n 8 -c HMC --viz --viz-aso -- ./pi
 
 run_mpirun:
-	../../run-sniper --mpi --mpi-ranks=2 --mpi-exec="mpirun -genv ENVNAME VALUE" -n 4 -c gainestown -- ./pi
+	../../run-sniper --mpi --mpi-ranks=2 --mpi-exec="mpirun -genvnone" -n 4 -c HMC -- ./pi

@@ -1,4 +1,4 @@
-#include "mpi.h"
+#include <mpi.h>
 #include "sim_api.h"
 
 #include <stdio.h>

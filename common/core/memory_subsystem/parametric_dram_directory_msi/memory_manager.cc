@@ -23,7 +23,7 @@
 #else
 #  define MYLOG(...) {}
 #endif
-
+using namespace std;
 
 namespace ParametricDramDirectoryMSI
 {
@@ -44,6 +44,8 @@ MemoryManager::MemoryManager(Core* core,
    m_dram_cntlr_present(false),
    m_enabled(false)
 {
+   cout << "[LINGXI]: in /common/core/mem_sub/para_dram_dir_msi/mem_manager. " <<
+	   "core_id: " << to_string(core->getId()) << endl;	
    // Read Parameters from the Config file
    std::map<MemComponent::component_t, CacheParameters> cache_parameters;
    std::map<MemComponent::component_t, String> cache_names;
@@ -68,7 +70,9 @@ MemoryManager::MemoryManager(Core* core,
       m_cache_block_size = Sim()->getCfg()->getInt("perf_model/l1_icache/cache_block_size");
 
       m_last_level_cache = (MemComponent::component_t)(Sim()->getCfg()->getInt("perf_model/cache/levels") - 2 + MemComponent::L2_CACHE);
-
+//cout << "Perf_Model/cache/levels: " << to_string(Sim()->getCfg()->getInt("perf_model/cache/levels")) << " MemComponent::L2_CACHE: " << to_string(MemComponent::L2_CACHE) << endl;
+//cout << "m_last_level_cache: " << to_string(m_last_level_cache) << endl;
+	
       UInt32 stlb_size = Sim()->getCfg()->getInt("perf_model/stlb/size");
       if (stlb_size)
          m_stlb = new TLB("stlb", "perf_model/stlb", getCore()->getId(), stlb_size, Sim()->getCfg()->getInt("perf_model/stlb/associativity"), NULL);
@@ -101,7 +105,7 @@ MemoryManager::MemoryManager(Core* core,
                objectName = "L" + level;
                break;
          }
-
+//cout << "configName: " << configName << endl;
          const ComponentPeriod *clock_domain = NULL;
          String domain_name = Sim()->getCfg()->getStringArray("perf_model/" + configName + "/dvfs_domain", core->getId());
          if (domain_name == "core")
@@ -190,19 +194,22 @@ MemoryManager::MemoryManager(Core* core,
    std::vector<core_id_t> core_list_with_tag_directories;
    String tag_directory_locations = Sim()->getCfg()->getString("perf_model/dram_directory/locations");
 
+   // [LINGXI]: the next part specifies the loation of dram_directory
    if (tag_directory_locations == "dram")
-   {
+   { 
       // Place tag directories only at DRAM controllers
       core_list_with_tag_directories = core_list_with_dram_controllers;
    }
    else
    {
-      SInt32 tag_directory_interleaving;
+      SInt32 tag_directory_interleaving; // this specifies every N cores there is a dir
 
       // Place tag directores at each (master) cache
       if (tag_directory_locations == "llc")
       {
          tag_directory_interleaving = cache_parameters[m_last_level_cache].shared_cores;
+//	cout << "..........cache_parameters[m_last_level_cache].shared_cores: " << to_string(cache_parameters[m_last_level_cache].shared_cores) << endl;
+//	cout << "..........Sim()->getCfg()->getInt(perf_model/dram_directory/interleaving) * smt_cores: " << to_string(Sim()->getCfg()->getInt("perf_model/dram_directory/interleaving") * smt_cores) << endl;
       }
       else if (tag_directory_locations == "interleaved")
       {
@@ -223,7 +230,7 @@ MemoryManager::MemoryManager(Core* core,
    m_dram_controller_home_lookup = new AddressHomeLookup(dram_directory_home_lookup_param, core_list_with_dram_controllers, getCacheBlockSize());
 
    // if (m_core->getId() == 0)
-   //   printCoreListWithMemoryControllers(core_list_with_dram_controllers);
+   //printCoreListWithMemoryControllers(core_list_with_dram_controllers);
 
    if (find(core_list_with_dram_controllers.begin(), core_list_with_dram_controllers.end(), getCore()->getId()) != core_list_with_dram_controllers.end())
    {
@@ -273,9 +280,10 @@ MemoryManager::MemoryManager(Core* core,
          Sim()->getStatsManager()->logTopology("tag-dir", core->getId(), core->getId());
       }
    }
-
+// set up cache_cntlr
    for(UInt32 i = MemComponent::FIRST_LEVEL_CACHE; i <= (UInt32)m_last_level_cache; ++i) {
-      CacheCntlr* cache_cntlr = new CacheCntlr(
+//cout << "MemComponent::component_t: " << (MemComponent::component_t)i << endl;
+        CacheCntlr* cache_cntlr = new CacheCntlr(
          (MemComponent::component_t)i,
          cache_names[(MemComponent::component_t)i],
          getCore()->getId(),
@@ -294,28 +302,38 @@ MemoryManager::MemoryManager(Core* core,
 
    m_cache_cntlrs[MemComponent::L1_ICACHE]->setNextCacheCntlr(m_cache_cntlrs[MemComponent::L2_CACHE]);
    m_cache_cntlrs[MemComponent::L1_DCACHE]->setNextCacheCntlr(m_cache_cntlrs[MemComponent::L2_CACHE]);
-   for(UInt32 i = MemComponent::L2_CACHE; i <= (UInt32)m_last_level_cache - 1; ++i)
-      m_cache_cntlrs[(MemComponent::component_t)i]->setNextCacheCntlr(m_cache_cntlrs[(MemComponent::component_t)(i + 1)]);
 
+//   cout << "MemComponent::L2_CACHE: " << to_string(MemComponent::L2_CACHE) << " m_last_level_cache - 1: " << to_string(m_last_level_cache - 1) << endl; 
+
+   for(UInt32 i = MemComponent::L2_CACHE; i <= (UInt32)m_last_level_cache - 1; ++i){
+//   cout << "am i ever here?" << endl;
+	   m_cache_cntlrs[(MemComponent::component_t)i]->setNextCacheCntlr(m_cache_cntlrs[(MemComponent::component_t)(i + 1)]);
+   }
    CacheCntlrList prev_cache_cntlrs;
    prev_cache_cntlrs.push_back(m_cache_cntlrs[MemComponent::L1_ICACHE]);
    prev_cache_cntlrs.push_back(m_cache_cntlrs[MemComponent::L1_DCACHE]);
+//cout << "prev_cache_cntlrs.size() " << to_string(prev_cache_cntlrs.size()) << endl;
+
+// temporarily commented out as l2_cache is null
+
    m_cache_cntlrs[MemComponent::L2_CACHE]->setPrevCacheCntlrs(prev_cache_cntlrs);
 
    for(UInt32 i = MemComponent::L2_CACHE; i <= (UInt32)m_last_level_cache - 1; ++i) {
-      CacheCntlrList prev_cache_cntlrs;
-      prev_cache_cntlrs.push_back(m_cache_cntlrs[(MemComponent::component_t)i]);
-      m_cache_cntlrs[(MemComponent::component_t)(i + 1)]->setPrevCacheCntlrs(prev_cache_cntlrs);
+        CacheCntlrList prev_cache_cntlrs;
+      	prev_cache_cntlrs.push_back(m_cache_cntlrs[(MemComponent::component_t)i]);
+      	m_cache_cntlrs[(MemComponent::component_t)(i + 1)]->setPrevCacheCntlrs(prev_cache_cntlrs);
    }
 
    // Create Performance Models
-   for(UInt32 i = MemComponent::FIRST_LEVEL_CACHE; i <= (UInt32)m_last_level_cache; ++i)
-      m_cache_perf_models[(MemComponent::component_t)i] = CachePerfModel::create(
+//   cout << "MemComponent::FIRST_LEVEL_CACHE: " << to_string(MemComponent::FIRST_LEVEL_CACHE) << " m_last_level_cache: " << to_string(m_last_level_cache) << endl;
+   for(UInt32 i = MemComponent::FIRST_LEVEL_CACHE; i <= (UInt32)m_last_level_cache; ++i){
+//cout << "(MemComponent::component_t)i: " << to_string((MemComponent::component_t)i) << endl;
+       m_cache_perf_models[(MemComponent::component_t)i] = CachePerfModel::create(
        cache_parameters[(MemComponent::component_t)i].perf_model_type,
        cache_parameters[(MemComponent::component_t)i].data_access_time,
        cache_parameters[(MemComponent::component_t)i].tags_access_time
       );
-
+   }
 
    if (m_dram_cntlr_present)
       LOG_ASSERT_ERROR(m_cache_cntlrs[m_last_level_cache]->isMasterCache() == true,
@@ -538,6 +556,7 @@ MYLOG("end");
 void
 MemoryManager::sendMsg(PrL1PrL2DramDirectoryMSI::ShmemMsg::msg_t msg_type, MemComponent::component_t sender_mem_component, MemComponent::component_t receiver_mem_component, core_id_t requester, core_id_t receiver, IntPtr address, Byte* data_buf, UInt32 data_length, HitWhere::where_t where, ShmemPerf *perf, ShmemPerfModel::Thread_t thread_num)
 {
+//cout << "data_length: " << to_string(data_length) << endl; // 0 or 64
 MYLOG("send msg %u %ul%u > %ul%u", msg_type, requester, sender_mem_component, receiver, receiver_mem_component);
    assert((data_buf == NULL) == (data_length == 0));
    PrL1PrL2DramDirectoryMSI::ShmemMsg shmem_msg(msg_type, sender_mem_component, receiver_mem_component, requester, address, data_buf, data_length, perf);
@@ -555,9 +574,12 @@ MYLOG("send msg %u %ul%u > %ul%u", msg_type, requester, sender_mem_component, re
    NetPacket packet(msg_time, SHARED_MEM_1,
          m_core_id_master, receiver,
          shmem_msg.getMsgLen(), (const void*) msg_buf);
-   getNetwork()->netSend(packet);
-
-   // Delete the Msg Buf
+ SInt32 pkt_len;
+  pkt_len =  getNetwork()->netSend(packet);
+//cout << "pkt_len: " << to_string(pkt_len) << endl;
+//cout << "shmem_msg.getMsgLen(): " << to_string(shmem_msg.getMsgLen()) << endl; // 56 or 120
+//cout << "" << endl;
+// Delete the Msg Buf
    delete [] msg_buf;
 }
 

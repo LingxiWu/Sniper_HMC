@@ -38,6 +38,8 @@ DvfsManager::DvfsManager()
    for(unsigned int i = 0; i < m_num_app_cores; ++i)
    {
       float _core_frequency = Sim()->getCfg()->getFloatArray("perf_model/core/frequency", i);
+      //cout << "^^^^^^^^^^^^^^^^^^^core : " << to_string(i) << " _core_frequency: " << to_string(_core_frequency) << " core_frequency: " << to_string(core_frequency) << endl; 
+ 
       if (_core_frequency != core_frequency) {
          app_proc_domains[getCoreDomainId(i)] = ComponentPeriod::fromFreqHz(_core_frequency*1000000000);
          printf("Core %d at %.2f GHz (global clock %.2f GHz)\n", i, _core_frequency, core_frequency);
@@ -60,10 +62,10 @@ const ComponentPeriod* DvfsManager::getCoreDomain(UInt32 core_id)
 {
    if (core_id < m_num_app_cores)
    {
+//	   cout << "***************************** core_id: " << to_string(core_id) << " m_num_app_cores: " << to_string(m_num_app_cores) << endl;
       return &app_proc_domains[getCoreDomainId(core_id)];
    }
-   else
-   {
+   else{
       // We currently only support a single non-app domain
       return &global_domains[DOMAIN_GLOBAL_DEFAULT];
    }

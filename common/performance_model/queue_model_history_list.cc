@@ -14,6 +14,7 @@ QueueModelHistoryList::QueueModelHistoryList(String name, UInt32 id, SubsecondTi
    m_total_requests(0),
    m_total_requests_using_analytical_model(0)
 {
+//cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%% min_processing_time: " << to_string(min_processing_time.getNS()) << endl;
    // history_list queuing model does not play nice with the interval core model:
    // The interval model issues memory operations in big batches, even when it later decides to serialize those,
    // The history_list queue model will in this case return large, increasing latencies which are then also serialized.
@@ -26,6 +27,8 @@ QueueModelHistoryList::QueueModelHistoryList(String name, UInt32 id, SubsecondTi
    // Some Hard-Coded values here
    // Assumptions
    // 1) Simulation Time will not exceed 2^63.
+//   UInt32 max_list_size = 0;
+   q_core_id = id; // [LINGXI]
    UInt32 max_list_size = 0;
    try
    {
@@ -55,6 +58,7 @@ QueueModelHistoryList::~QueueModelHistoryList()
 SubsecondTime
 QueueModelHistoryList::computeQueueDelay(SubsecondTime pkt_time, SubsecondTime processing_time, core_id_t requester)
 {
+   // processing_time is meaured using bandwidth and cache line size	
    LOG_ASSERT_ERROR(m_free_interval_list.size() >= 1,
          "Free Interval list size < 1");
 
@@ -64,6 +68,8 @@ QueueModelHistoryList::computeQueueDelay(SubsecondTime pkt_time, SubsecondTime p
    // If yes, use analytical model
    // If not, use the history list based queue model
    std::pair<SubsecondTime,SubsecondTime> oldest_interval = m_free_interval_list.front();
+//cout << "+++++++++++++ m_analytical_model_enabled: " << to_string(m_analytical_model_enabled) << endl;
+//cout << "oldest_interval: " << to_string(oldest_interval.first.getNS()) << " to " << to_string(oldest_interval.second.getNS()) << endl;
    if (m_analytical_model_enabled && ((pkt_time + processing_time) <= oldest_interval.first))
    {
       // Increment the number of requests that use the analytical model
@@ -74,6 +80,7 @@ QueueModelHistoryList::computeQueueDelay(SubsecondTime pkt_time, SubsecondTime p
    {
       queue_delay = computeUsingHistoryList(pkt_time, processing_time);
       updateAverageDelay(queue_delay);
+// cout << "queue_delay_count: " << to_string(m_total_requests_using_analytical_model) << endl; // seems always zero
    }
 
    updateQueueUtilization(processing_time);
@@ -127,7 +134,7 @@ QueueModelHistoryList::updateAverageDelay(SubsecondTime queue_delay)
 
 SubsecondTime
 QueueModelHistoryList::computeUsingAnalyticalModel(SubsecondTime pkt_time, SubsecondTime processing_time)
-{
+{ //cout << "analytical" << endl;
    // WH: Old code used general queuing model to estimate delay based on historical utilization rate:
    //         queue_delay = (rho * processing_time) / (2 * (1 - rho))) + 1
    //     For rho near or over 1, which does happen due to other approximations (skew between cores), this yields nonsense.
@@ -140,21 +147,28 @@ QueueModelHistoryList::computeUsingAnalyticalModel(SubsecondTime pkt_time, Subse
 SubsecondTime
 QueueModelHistoryList::computeUsingHistoryList(SubsecondTime pkt_time, SubsecondTime processing_time)
 {
-   LOG_ASSERT_ERROR(m_free_interval_list.size() <= m_max_free_interval_list_size,
+
+//cout << "m_min_processing_time: " << to_string(m_min_processing_time.getNS()) 
+//     << " processing_time: " << to_string(processing_time.getNS()) << endl;
+
+	LOG_ASSERT_ERROR(m_free_interval_list.size() <= m_max_free_interval_list_size,
          "Free Interval list size(%u) > %u", m_free_interval_list.size(), m_max_free_interval_list_size);
+
    SubsecondTime queue_delay = SubsecondTime::MaxTime();
 
    FreeIntervalList::iterator curr_it;
    for (curr_it = m_free_interval_list.begin(); curr_it != m_free_interval_list.end(); curr_it ++)
    {
       std::pair<SubsecondTime,SubsecondTime> interval = (*curr_it);
-
+//cout << "interval.first: " << to_string(interval.first.getNS()) << " interval.second: " << to_string(interval.second.getNS()) << endl;
       if ((pkt_time >= interval.first) && ((pkt_time + processing_time) <= interval.second))
       {
          queue_delay = SubsecondTime::Zero();
          // Adjust the data structure accordingly
          curr_it = m_free_interval_list.erase(curr_it);
-         if ((pkt_time - interval.first) >= m_min_processing_time)
+// [LINGXI]: looks like it's creating many 'fragments': a new request is fitted into a slot, if the slot is large enough, it will accomondate multiple such requests, otherwise the whole slot is dedicated
+// to the request
+	 if ((pkt_time - interval.first) >= m_min_processing_time)
          {
             m_free_interval_list.insert(curr_it, std::pair<SubsecondTime,SubsecondTime>(interval.first, pkt_time));
          }

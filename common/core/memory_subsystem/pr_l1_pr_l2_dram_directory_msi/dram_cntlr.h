@@ -17,18 +17,18 @@ class FaultInjector;
 
 namespace PrL1PrL2DramDirectoryMSI
 {
-   class DramCntlr : public DramCntlrInterface
+   class DramCntlr : public DramCntlrInterface // def in /common/core/mem_sub/dram/d_c_i
    {
       private:
          std::unordered_map<IntPtr, Byte*> m_data_map;
-         DramPerfModel* m_dram_perf_model;
+         DramPerfModel* m_dram_perf_model; // def in /common/perf_mod/d_p_m.h
          FaultInjector* m_fault_injector;
 
          typedef std::unordered_map<IntPtr,UInt64> AccessCountMap;
          AccessCountMap* m_dram_access_count;
          UInt64 m_reads, m_writes;
 
-         ShmemPerf m_dummy_shmem_perf;
+         ShmemPerf m_dummy_shmem_perf; 
 
          SubsecondTime runDramPerfModel(core_id_t requester, SubsecondTime time, IntPtr address, DramCntlrInterface::access_t access_type, ShmemPerf *perf);
 

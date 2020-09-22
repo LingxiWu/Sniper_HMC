@@ -1,7 +1,7 @@
 #include "shmem_perf.h"
 #include "network.h"
 #include "log.h"
-
+using namespace std;
 const char* shmem_reason_names[] = {
    "noc-base",
    "noc-queue",
@@ -43,6 +43,9 @@ ShmemPerf::ShmemPerf()
    , m_time_last(SubsecondTime::Zero())
    , m_times(NUM_SHMEM_TIMES)
 {
+//	cout << "[LINGXI]: in /common/core/mem_sub/pr_l1_pr_l2.../ShmemPerf. Create ShmemPerf obj" << 
+//		" core_id: " << to_string(m_core_id) <<
+//		endl;
 }
 
 void ShmemPerf::disable()
@@ -74,8 +77,10 @@ void ShmemPerf::updateTime(SubsecondTime time, shmem_times_type_t reason)
 
 void ShmemPerf::updatePacket(NetPacket& packet)
 {
+//	   cout << "packet.queue_delay: " << to_string(packet.queue_delay.m_time) << endl;
    if (packet.time > m_time_last)
    {
+//	   cout << "packet.queue_delay: " << to_string(packet.queue_delay.m_time) << endl;
       m_times[NOC_QUEUE] += packet.queue_delay;
       m_time_last += packet.queue_delay;
       updateTime(packet.time, NOC_BASE);

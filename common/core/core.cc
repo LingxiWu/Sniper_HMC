@@ -18,7 +18,7 @@
 #include "cheetah_manager.h"
 
 #include <cstring>
-
+#include <string>
 #if 0
    extern Lock iolock;
 #  define MYLOG(...) { ScopedLock l(iolock); fflush(stderr); fprintf(stderr, "[%8lu] %dcor %-25s@%03u: ", getPerformanceModel()->getCycleCount(ShmemPerfModel::_USER_THREAD), m_core_id, __FUNCTION__, __LINE__); fprintf(stderr, __VA_ARGS__); fprintf(stderr, "\n"); fflush(stderr); }
@@ -369,7 +369,11 @@ Core::initiateMemoryAccess(MemComponent::component_t mem_component,
                curr_addr_aligned, curr_offset,
                data_buf ? curr_data_buffer_head : NULL, curr_size,
                modeled);
-
+/*
+      if(strcmp(HitWhereString(this_hit_where),"L1")!=0 && strcmp(HitWhereString(this_hit_where),"L1I")!=0 && strcmp(HitWhereString(this_hit_where),"L2")!=0 && strcmp(HitWhereString(this_hit_where),"dram-local")){
+cout << "in core.h initiateMemoryAccess() HitWhere::where_t is: " << HitWhereString(this_hit_where) << endl;
+      }
+*/
       if (hit_where != (HitWhere::where_t)mem_component)
       {
          // If it is a READ or READ_EX operation,
@@ -476,10 +480,14 @@ Core::accessMemory(lock_signal_t lock_signal, mem_op_t mem_op_type, IntPtr d_add
       data_buffer = NULL; // initiateMemoryAccess's data is not used
    }
 
-   if (modeled == MEM_MODELED_NONE)
+   if (modeled == MEM_MODELED_NONE){
+//	   cout << "makeMemoryResults ..." << endl;
       return makeMemoryResult(HitWhere::UNKNOWN, SubsecondTime::Zero());
-   else
+   }   
+   else{
+//	   cout << "initiateMemoryAccess ... " << endl;
       return initiateMemoryAccess(MemComponent::L1_DCACHE, lock_signal, mem_op_type, d_addr, (Byte*) data_buffer, data_size, modeled, eip, now);
+   }
 }
 
 

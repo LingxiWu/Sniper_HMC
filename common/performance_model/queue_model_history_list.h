@@ -10,6 +10,7 @@
 class QueueModelHistoryList : public QueueModel
 {
 public:
+	// [LINGXI]
    typedef std::list<std::pair<SubsecondTime,SubsecondTime> > FreeIntervalList;
 
    QueueModelHistoryList(String name, UInt32 id, SubsecondTime min_processing_time);
@@ -22,17 +23,18 @@ public:
 
 private:
    SubsecondTime m_min_processing_time;
-   UInt32 m_max_free_interval_list_size;
+   UInt32 m_max_free_interval_list_size; // config files: q_model/history_list/max_list_size
 
    FreeIntervalList m_free_interval_list;
 
    // Tracks queue utilization
-   SubsecondTime m_utilized_time;
-   SubsecondTime m_total_queue_delay;
-   MovingAverage<SubsecondTime>* m_average_delay;
+   SubsecondTime m_utilized_time; // accumulate processing time
+   SubsecondTime m_total_queue_delay; // accumulate q delay
+   MovingAverage<SubsecondTime>* m_average_delay; // hold average delay, this changes when new delay generated 
 
    // Is analytical model used ?
-   bool m_analytical_model_enabled;
+   bool m_analytical_model_enabled; // config files: q_model/history_list/analytical_model_enabled
+
 
    // Performance Counters
    UInt64 m_total_requests;

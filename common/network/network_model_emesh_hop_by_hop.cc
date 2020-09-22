@@ -12,6 +12,7 @@
 
 #include <math.h>
 #include <stdlib.h>
+#include <algorithm>
 
 const char* output_direction_names[] = {
    "up", "down", "left", "right", "---", "self", "peer", "destination"
@@ -40,11 +41,13 @@ NetworkModelEMeshHopByHop::NetworkModelEMeshHopByHop(Network* net, EStaticNetwor
    m_link_bandwidth(Sim()->getDvfsManager()->getCoreDomain(m_core_id), 0),
    m_hop_latency(Sim()->getDvfsManager()->getCoreDomain(m_core_id), 0)
 {
-   // Get the Link Bandwidth, Hop Latency and if it has broadcast tree mechanism
+     	// Get the Link Bandwidth, Hop Latency and if it has broadcast tree mechanism
    try
    {
-      // Link Bandwidth is specified in bits/clock_cycle
-      m_link_bandwidth = ComponentBandwidthPerCycle(Sim()->getDvfsManager()->getCoreDomain(m_core_id), Sim()->getCfg()->getInt("network/emesh_hop_by_hop/link_bandwidth"));
+       cout << "create a network model: common/network/emesh_hop_by_hop" << " net_type: " << to_string(net_type) << endl;
+       // Link Bandwidth is specified in bits/clock_cycle
+  //   cout << "&&&&&&&&&&&&&&&&&&&&& period: " << to_string(Sim()->getDvfsManager()->getCoreDomain(m_core_id)->getPeriod().getFS()) << endl;
+       m_link_bandwidth = ComponentBandwidthPerCycle(Sim()->getDvfsManager()->getCoreDomain(m_core_id), Sim()->getCfg()->getInt("network/emesh_hop_by_hop/link_bandwidth"));
       // Hop Latency is specified in cycles
       m_hop_latency = ComponentLatency(Sim()->getDvfsManager()->getCoreDomain(m_core_id), Sim()->getCfg()->getInt("network/emesh_hop_by_hop/hop_latency"));
 
@@ -101,16 +104,199 @@ NetworkModelEMeshHopByHop::~NetworkModelEMeshHopByHop()
 void
 NetworkModelEMeshHopByHop::createQueueModels(String name)
 {
-   SubsecondTime min_processing_time = m_link_bandwidth.getPeriod();
+/* START: HMC specifics */	
+   bool model_hmc = Sim()->getCfg()->getBool("network/emesh_hop_by_hop/HMC_topology/model_hmc");
+   if(model_hmc){
+      String size = Sim()->getCfg()->getString("network/emesh_hop_by_hop/size");
+      LOG_ASSERT_ERROR(size!="", "For modeling HMC-style network, please specify network/emesh_hop_by_hop/size: WIDTH:HEIGHT"); 
 
-   // Initialize the queue models for all the '4' output directions
-   m_queue_models[DOWN] = QueueModel::create(name+".link-down", m_core_id, m_queue_model_type, min_processing_time);
-   m_queue_models[LEFT] = QueueModel::create(name+".link-left", m_core_id, m_queue_model_type, min_processing_time);
-   m_queue_models[UP] = QueueModel::create(name+".link-up", m_core_id, m_queue_model_type, min_processing_time);
-   m_queue_models[RIGHT] = QueueModel::create(name+".link-right", m_core_id, m_queue_model_type, min_processing_time);
+      SInt32 mesh_width, mesh_height;
+      int res = sscanf(size.c_str(), "%d:%d", &mesh_width, &mesh_height);
+      LOG_ASSERT_ERROR(res==2, "invalid mesh size %s, expected weight:height", size.c_str()); 
 
-   m_injection_port_queue_model = QueueModel::create(name+".link-in", m_core_id, m_queue_model_type, min_processing_time);
-   m_ejection_port_queue_model = QueueModel::create(name+".link-out", m_core_id, m_queue_model_type, min_processing_time);
+      String topology_type = Sim()->getCfg()->getString("network/emesh_hop_by_hop/HMC_topology/type");
+      int quadrant_size = Sim()->getCfg()->getInt("network/emesh_hop_by_hop/HMC_topology/quadrant_size");
+      LOG_ASSERT_ERROR(quadrant_size == 4 || quadrant_size == 8, "The network/emesh_hop_by_hop/HMC_topology/quadrant_size should be either 4 or 8");
+      
+      SubsecondTime min_processing_time = m_link_bandwidth.getPeriod(); // standard
+      float ext_link_bw = 8 * Sim()->getCfg()->getFloat("network/emesh_hop_by_hop/HMC_topology/external_link_bandwidth"); 
+      ComponentBandwidth ext_link_bw_per_edge_node (ext_link_bw / 4.0); // HMC external_link_bw ext_link is shared by 4 edge nodes
+		  
+      if(topology_type.compare("daisy_chain") == 0){
+	    // HMC 1.0, quadrant size 4
+	    if(quadrant_size == 4){
+	       // Make sure the topology is truly daisy chain  
+	       LOG_ASSERT_ERROR(((mesh_width * mesh_height) % 16 == 0) && (mesh_width == 4 || mesh_height == 4),
+			       "HMC1.0 topology error, for a daisy chain config, core count should be a multiple of 16, and one side should be 4."); 
+	       // num of cubes
+	       int num_cube = (mesh_width * mesh_height) / 16;
+               int orientation = (mesh_height == 4) ? 1 : 0; // 1: horizontal span, 0: vertical span
+	       
+	       // horizontal span 3,4,7,8,11,12 ... col, vertical span 3,4,7,8,11,12 ... row
+	       if(num_cube == 1){
+                   
+                  m_queue_models[DOWN] = QueueModel::create(name+".link-down", m_core_id, m_queue_model_type, min_processing_time);
+                  m_queue_models[LEFT] = QueueModel::create(name+".link-left", m_core_id, m_queue_model_type, min_processing_time);
+                  m_queue_models[UP] = QueueModel::create(name+".link-up", m_core_id, m_queue_model_type, min_processing_time);
+                  m_queue_models[RIGHT] = QueueModel::create(name+".link-right", m_core_id, m_queue_model_type, min_processing_time);
+                  m_injection_port_queue_model = QueueModel::create(name+".link-in", m_core_id, m_queue_model_type, min_processing_time);
+                  m_ejection_port_queue_model = QueueModel::create(name+".link-out", m_core_id, m_queue_model_type, min_processing_time);
+	       } else {
+                  //SubsecondTime min_processing_time = m_link_bandwidth.getPeriod();
+		    
+		  if(orientation == 1) {
+		     m_queue_models[DOWN] = QueueModel::create(name+".link-down", m_core_id, m_queue_model_type, min_processing_time);
+                     m_queue_models[UP] = QueueModel::create(name+".link-up", m_core_id, m_queue_model_type, min_processing_time);
+                     m_injection_port_queue_model = QueueModel::create(name+".link-in", m_core_id, m_queue_model_type, min_processing_time);
+                     m_ejection_port_queue_model = QueueModel::create(name+".link-out", m_core_id, m_queue_model_type, min_processing_time);
+		     list<int> list_right;
+		     for(int i = 0; i < 4; i++){
+		        for (int j = 0; j < num_cube - 1; j ++ ){
+			   //cout << to_string(3 + num_cube * i * 4 + 4 * j) << endl;
+			   list_right.push_back(3 + num_cube * i * 4 + 4 * j);
+			}	
+		     }		     
+		     list<int> list_left;
+		     for(int i = 0; i < 4; i++){
+			for (int j = 0; j < num_cube - 1; j ++ ){
+			   list_left.push_back(4 + num_cube * i * 4 + 4 * j);
+			}
+		     }// pkt_len is eigher 14 or 78 Bytes; 
+		     if(std::find(list_right.begin(), list_right.end(), m_core_id) != list_right.end()){
+		        m_queue_models[RIGHT] = QueueModel::create(
+					name+".link-right", 
+					m_core_id, 
+					m_queue_model_type, 
+					ext_link_bw_per_edge_node.getRoundedLatency(8 * 14));     
+		        
+		     }
+		     if(std::find(list_left.begin(), list_left.end(), m_core_id) != list_left.end()){
+		        m_queue_models[LEFT] = QueueModel::create(
+					name+".link-left", 
+					m_core_id, 
+					m_queue_model_type, 
+					ext_link_bw_per_edge_node.getRoundedLatency(8 * 14));
+		     }
+		  } 
+		  else {
+                       m_queue_models[LEFT] = QueueModel::create(name+".link-left", m_core_id, m_queue_model_type, min_processing_time);
+                       m_queue_models[RIGHT] = QueueModel::create(name+".link-right", m_core_id, m_queue_model_type, min_processing_time);
+                       m_injection_port_queue_model = QueueModel::create(name+".link-in", m_core_id, m_queue_model_type, min_processing_time);
+                       m_ejection_port_queue_model = QueueModel::create(name+".link-out", m_core_id, m_queue_model_type, min_processing_time);     
+		       vector<int> list_down_base = {12, 13, 14, 15};
+		       list<int> list_down;
+		       for(int i=0;i<num_cube-1;i++){
+			  for(int j=0;j<4;j++){
+			     list_down.push_back(list_down_base[j]+16*i);
+			     //cout << "down: " << to_string(list_down_base[j]+16*i) << endl;
+			  }
+		       }
+		       
+	       	       vector<int> list_up_base = {16, 17, 18, 19};
+	               list<int> list_up;
+	               for(int i=0;i<num_cube-1;i++){
+                          for(int j=0;j<4;j++){
+			     list_up.push_back(list_up_base[j]+16*i);
+			     //cout << "up: " << to_string(list_up_base[j]+16*i) << endl;
+			  }
+		       }	
+		       
+		       if(std::find(list_down.begin(), list_down.end(), m_core_id) != list_down.end()){
+	                  m_queue_models[DOWN] = QueueModel::create(
+					name+".link-down", 
+					m_core_id, 
+					m_queue_model_type, 
+					ext_link_bw_per_edge_node.getRoundedLatency(8 * 14));	          
+		       }       
+
+		       if(std::find(list_up.begin(), list_up.end(), m_core_id) != list_up.end()){
+                          m_queue_models[UP] = QueueModel::create(
+					name+".link-up", 
+					m_core_id, 
+					m_queue_model_type, 
+					ext_link_bw_per_edge_node.getRoundedLatency(8 * 14));
+		       }       
+		  }
+	       }
+                 
+	       
+
+	    } else if(quadrant_size == 8){ // HMC 2.0		    
+	       // Make sure the tolopogy is truly daisy chain
+	       LOG_ASSERT_ERROR(((mesh_width * mesh_height) % 32 == 0),
+			       "HMC2.0 topology error, for a daisy chain config, core count should be a multiple of 32");
+	       //LOG_ASSERT_ERROR((mesh_width == 4 || mesh_width == 8) || (mesh_height == 4 || mesh_height == 8), 
+	       //	       "HMC2.0 topology error, either mesh_width or mesh_heigh has to be either 4 or 8.");
+	       
+	       // for simplicity, just assume width to be 8 (two quadrant), and span downward
+	       LOG_ASSERT_ERROR(mesh_width == 8,"HMC2.0 topology error, mesh_width has to be 8.");
+               int num_cube = mesh_width * mesh_height / 32;
+	       //cout << "################### num_cube: " << to_string(num_cube) << endl;
+
+	       m_queue_models[LEFT] = QueueModel::create(name+".link-left", m_core_id, m_queue_model_type, min_processing_time);
+               m_queue_models[RIGHT] = QueueModel::create(name+".link-right", m_core_id, m_queue_model_type, min_processing_time);
+               m_injection_port_queue_model = QueueModel::create(name+".link-in", m_core_id, m_queue_model_type, min_processing_time);
+               m_ejection_port_queue_model = QueueModel::create(name+".link-out", m_core_id, m_queue_model_type, min_processing_time);     
+	       vector<int> list_down_base = {24, 25, 26, 27, 28, 29, 30, 31};
+	       list<int> list_down;
+	       for(int i=0;i<num_cube-1;i++){
+                  for(int j=0;j<8;j++){
+		     list_down.push_back(list_down_base[j]+32*i);
+		     //cout << "down: " << to_string(list_down_base[j]+32*i) << endl;
+	          }
+	       }
+	       vector<int> list_up_base = {32, 33, 34, 35, 36, 37, 38, 39};
+	       list<int> list_up;
+	       for(int i=0;i<num_cube-1;i++){
+                  for(int j=0;j<8;j++){
+		     list_up.push_back(list_up_base[j]+32*i);
+		     //cout << "up: " << to_string(list_up_base[j]+32*i) << endl;
+	          }
+	       }
+               if(std::find(list_down.begin(), list_down.end(), m_core_id) != list_down.end()){
+	          m_queue_models[DOWN] = QueueModel::create(
+					name+".link-down", 
+					m_core_id, 
+					m_queue_model_type, 
+					ext_link_bw_per_edge_node.getRoundedLatency(8 * 14));	          
+	       }       
+
+	       if(std::find(list_up.begin(), list_up.end(), m_core_id) != list_up.end()){
+                  m_queue_models[UP] = QueueModel::create(
+					name+".link-up", 
+					m_core_id, 
+					m_queue_model_type, 
+					ext_link_bw_per_edge_node.getRoundedLatency(8 * 14));
+	       }
+	    } /* end quadrant */
+      } /* end daisy_chain */
+      else if (topology_type.compare("grid") == 0){
+         if(quadrant_size == 4){
+	    LOG_ASSERT_ERROR(((mesh_width * mesh_height) % 16 == 0) && (mesh_width > 4 && mesh_height > 4), "HMC1.0 topology error: WIDTH:HEIGHT specified in config file cannot make a HMC 1.0 grid.");
+	    int num_cube = mesh_width * mesh_height / 16;  
+	    LOG_ASSERT_ERROR((num_cube > 4) && (num_cube % 2), "HMC1.0 topology error: make sure the number of cube is even and greater than 4."); 
+	 
+	 
+	 } else if (quadrant_size == 8){
+
+	 }
+
+      } /* end grid */
+
+   } /* END: HMC specifics */
+   else {
+      SubsecondTime min_processing_time = m_link_bandwidth.getPeriod(); 
+      // Initialize the queue models for all the '4' output directions
+      // there are for monitoring traffic congestion 
+      // L/R/D/U are for non-sender and non-receiver nodes 
+      m_queue_models[DOWN] = QueueModel::create(name+".link-down", m_core_id, m_queue_model_type, min_processing_time);
+      m_queue_models[LEFT] = QueueModel::create(name+".link-left", m_core_id, m_queue_model_type, min_processing_time);
+      m_queue_models[UP] = QueueModel::create(name+".link-up", m_core_id, m_queue_model_type, min_processing_time);
+      m_queue_models[RIGHT] = QueueModel::create(name+".link-right", m_core_id, m_queue_model_type, min_processing_time);
+      // monitoring trafic and sender and receiver nodes
+      m_injection_port_queue_model = QueueModel::create(name+".link-in", m_core_id, m_queue_model_type, min_processing_time);
+      m_ejection_port_queue_model = QueueModel::create(name+".link-out", m_core_id, m_queue_model_type, min_processing_time);
+   }
 }
 
 void
@@ -129,7 +315,7 @@ NetworkModelEMeshHopByHop::routePacket(const NetPacket &pkt, std::vector<Hop> &n
          "requester(%i)", requester);
 
    UInt32 pkt_length = getNetwork()->getModeledLength(pkt);
-
+//cout << "pkt_length: " << to_string(pkt_length) << endl; // 14 or 78, meta: 5 + 9, data_size: 0 or 64
    LOG_PRINT("pkt length(%u)", pkt_length);
 
    if (pkt.sender == m_core_id)
@@ -221,9 +407,12 @@ NetworkModelEMeshHopByHop::routePacket(const NetPacket &pkt, std::vector<Hop> &n
    }
 }
 
+// always the receiver nodes invoke this function
 void
 NetworkModelEMeshHopByHop::processReceivedPacket(NetPacket& pkt)
 {
+//	if(pkt.receiver >= 7 || m_core_id >= 7)
+//		cout << "receiver: " << to_string(pkt.receiver) << " m_core_id: " << m_core_id << endl;
    ScopedLock sl(m_lock);
 
    UInt32 pkt_length = getNetwork()->getModeledLength(pkt);
@@ -244,7 +433,7 @@ NetworkModelEMeshHopByHop::processReceivedPacket(NetPacket& pkt)
 
    SubsecondTime packet_latency = pkt.time - pkt.start_time;
    SubsecondTime contention_delay = packet_latency - (computeDistance(pkt.sender, m_core_id) * m_hop_latency.getLatency());
-
+//cout << to_string(m_hop_latency.getLatency().getFS()) << endl;
    if (pkt.sender != m_core_id && !m_fake_node)
    {
       SubsecondTime processing_time = computeProcessingTime(pkt_length);
@@ -372,7 +561,9 @@ NetworkModelEMeshHopByHop::computeProcessingTime(UInt32 pkt_length)
 
    // Send: (pkt_length * 8) bits
    // Bandwidth: (m_link_bandwidth) bits/cycle
+//cout << "pkt_length: " << to_string(pkt_length) << endl;
    UInt32 num_bits = pkt_length * 8;
+   // need to adjust the m_link_bandwidth
    return m_link_bandwidth.getRoundedLatency(num_bits);
 }
 
@@ -382,6 +573,10 @@ NetworkModelEMeshHopByHop::getNextDest(SInt32 final_dest, OutputDirection& direc
    // Do dimension-order routing
    // Curently, do store-and-forward routing
    // FIXME: Should change this to wormhole routing eventually
+
+//cout << "getApplicationCores: " << to_string((core_id_t)Config::getSingleton()->getApplicationCores()) << 
+//	" final_dest: " << to_string(final_dest) <<
+//	endl;
 
    if (final_dest >= (core_id_t)Config::getSingleton()->getApplicationCores())
    {

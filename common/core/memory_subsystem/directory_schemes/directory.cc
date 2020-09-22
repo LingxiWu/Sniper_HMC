@@ -6,6 +6,7 @@
 #include "stats.h"
 #include "log.h"
 #include "config.hpp"
+using namespace std;
 
 Directory::Directory(core_id_t core_id, String directory_type_str, UInt32 num_entries, UInt32 max_hw_sharers, UInt32 max_num_sharers):
    m_num_entries(num_entries),
@@ -15,6 +16,10 @@ Directory::Directory(core_id_t core_id, String directory_type_str, UInt32 num_en
    m_max_num_sharers(max_num_sharers),
    m_limitless_software_trap_penalty(SubsecondTime::Zero())
 {
+cout << "[LINGXI]: /common/core/mem_sub/directory. " << 
+	"num_entries: " << to_string(m_num_entries) << 
+	" max_hw_sharers: " << to_string(m_max_hw_sharers) << 
+	endl;
    // Look at the type of directory and create
    m_directory_entry_list = new DirectoryEntry*[m_num_entries];
 

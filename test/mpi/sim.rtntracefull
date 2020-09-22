@@ -1,0 +1,1010 @@
+stack	calls	bits_used	bits_total	instruction_count	nonidle_elapsed_time	waiting_cost	fp_addsub	fp_muldiv	l2miss	global_instructions	global_nonidle_elapsed_time	cpiBase	cpiBranchPredictor	cpiMem	ADDPD	ADDSD	ADDSS	ADDPS	SUBPD	SUBSD	SUBSS	SUBPS	MULPD	MULSD	MULSS	MULPS	DIVPD	DIVSD	DIVSS	DIVPS
+:7fca16925c90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:140505938743296::0:0
+:7fca16ea8fb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7fb427911a10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fb4274e7370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f0ac991f9c0	cfree	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7fca16da3f00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7fca16da07e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f8dbbe0a0e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f7bf886e9c0	cfree	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f7bf88674a0	_IO_str_seekoff	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f32699260e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f0ac9913200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f933f3bdf10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f4669dedcf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f8dbc21d330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f8dbbdfff10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f46698df370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:56167b79d97a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94654560849920::0:0
+:7f7bf8862200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7fb42747b040	@plt	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fca16d9d8f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7fb4274bef00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fb4274bb7e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fb4274b5420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f8dbbd94100	@plt	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7fb4274b2790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f933f441250	__write	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7fb4274b88f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fca16dcc370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f0ac98e97e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f0ac98e0790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f933f395f00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f933f389790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f8dbbdd7f00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:56167b79d810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94654560849920::0:0
+:7f46698aa790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f8dbbdce420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f32698ed8f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f32698ea420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f32698e7790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f0ac98da3d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:5635fe8577e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94789903413248::0:0
+:7f933f3833d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f46698ad420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7fb427040cf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:140411725348864::0:0
+:7fb4279d37b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f32698f3f00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f7bf8864370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f933f3bc200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:56167b79d7f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94654560849920::0:0
+:7f7bf88387e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:56210ea3697a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94699979497472::0:0
+:7fca171f99b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f46698b37e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f0ac991f0e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f3269e087b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f933f352040	@plt	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f7bf88629a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f46698b6f00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f4669962250	__write	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7fb4279044f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f4669d642c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7fca16d60040	@plt	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f8dbc2ec7b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7fb4279762b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f7bf8c813d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f0ac98a9230	@plt	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f0ac98a9040	@plt	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f8dbbe0a9c0	cfree	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f933f352230	@plt	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f933f352100	@plt	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f4669873230	@plt	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f32698b0100	@plt	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f32698b0040	@plt	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7fca172dacf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca172d0190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fb4274e5200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f7bf88293d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f7bf8dd4770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7fca16d60230	@plt	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:5557e22f57e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:93835945267200::0:0
+:7fb427a26a30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fb4279f5c80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fb4279eb190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f7bf886e0e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7fb43c361690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:140412080934912::0:0
+:7f0ac98e3420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7fca16e6f260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f933f7db4f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f467e759690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:139940745990144::0:0
+:7f933f7db330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:56167b79d840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94654560849920::0:0
+:5634c4a04810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94784637124608::0:0
+:7f933f7db3d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f3269d38e80	free@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7fca172b87b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f0ac9d323d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f3269d394f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f933f461260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f3269d393d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f7bf8d72ce0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7fca171e93d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f467e760cf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:139940745990144::0:0
+:5635fe857840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94789903413248::0:0
+:7f3269d39330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:5635fe857830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94789903413248::0:0
+:5635fe857810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94789903413248::0:0
+:7f7bf8c814f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f4669cfc4f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7fb43c35ddf0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:140412080934912::0:0
+:7f7bf87f8040	@plt	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7fb427904330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f7c0d6e5cf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:140170777894912::0:0
+:7f4669cfc3d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f7bf8c80e40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f933f7dae40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f8dbbd94230	@plt	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f7bf8ce2bb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f0ac9db8f40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f4669873100	@plt	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7fca171e8e80	free@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:5635fe8577f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94789903413248::0:0
+:7f327e78bbe0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:139854846894080::0:0
+:7f0ac9d31e80	free@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f4669d6e2b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f7bf8c80e80	free@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f0ac98e68f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f4669982260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f4669cfbe40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f933f3c80e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f46698def10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f933f8aa7b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f7bf87f8100	@plt	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7fb427040c90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:140411725348864::0:0
+:7f0ac9e19190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f4669d10570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f933f8cccf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f32698b0230	@plt	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f7bf882f790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f3269e8c770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7fb427903e40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f4669d6ddf0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7fca16dcbf10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f3269dab2b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f7bf88f2af0	__mmap	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f0ac9916490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f8dbbea3260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f8dbbdfe200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:5626cc386810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94724634992640::0:0
+:7fca1725adf0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f0ac9db8d70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f0ac9e23ce0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f8dbc27f0c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f4669d09a10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7fca16d97790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f4669d5e0c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f0ac999ccb0	poll	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7fb4279660c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fca16d913d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f46698b08f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f326991a200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f7bf8c95570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8d08ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f935423fcf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:140270748450816::0:0
+:7f933f38c420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f933f7f29f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:56210ea36810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94699979497472::0:0
+:563512b6c7e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94785947222016::0:0
+:7fca1725b2b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f4669de3190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f7bf88358f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f4669dcb7b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7fca171e9330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f7bf883bf00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f327e796690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:139854846894080::0:0
+:7f7c0d6d3be0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:140170777894912::0:0
+:7fca172009f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca1730ba30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f8dbbd94040	@plt	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:563512b6c830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94785947222016::0:0
+:7f32698f07e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f0ac9915370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:56210ea36840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94699979497472::0:0
+:56022e8577e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94567370420224::0:0
+:7fb43c368cf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:140412080934912::0:0
+:7f8dbc28f2b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7fca16dca9a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f0ac99b8260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:5557e22f57f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:93835945267200::0:0
+:7fca2bc42df0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:140506294329344::0:0
+:7f4669d0c9b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7fca16d60100	@plt	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7fb42798af40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fca171e94f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:5634c4a04830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94784637124608::0:0
+:7f7c0d6de690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:140170777894912::0:0
+:7fb4274e6f10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:56210ea367f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94699979497472::0:0
+:56210ea36830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94699979497472::0:0
+:7f327e79dcf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:139854846894080::0:0
+:7f8dbc21d3d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f467e74ebe0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:139940745990144::0:0
+:5634c4a047f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94784637124608::0:0
+:7f8dbc21ce80	free@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7fca171f6a10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:5557e22f5810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:93835945267200::0:0
+:7f933f7eb9b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:5626cc3867f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94724634992640::0:0
+:7f8dbbdd47e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7fb4279043d0	malloc@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fca2bc46690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:140506294329344::0:0
+:7f4669e1ea30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f7bf8d07f40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f0ac9d31e40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7fb42747b230	@plt	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:56022e857810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94567370420224::0:0
+:7f0ade78f690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:139684658786304::0:0
+:56022e85797a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94567370420224::0:0
+:7f933f3be370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7fb42796c2c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:563512b6c810	printf@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94785947222016::0:0
+:7f933f84cdf0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f933f83cbb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f0ac98ecf00	_IO_printf	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f46698e90e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f0ade78bdf0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:139684658786304::0:0
+:7f933f84d2b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f9354238690	_dl_find_dso_for_object	/lib64/ld-linux-x86-64.so.2:140270748450816::0:0
+:5626cc3867e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94724634992640::0:0
+:7f0ac9e85770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f32698e13d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f32699bf260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:563512b6c840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94785947222016::0:0
+:56167b79d7e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94654560849920::0:0
+:7f7bf8c81330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f3269d499b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7fb4274e8490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fca2bc3bbe0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:140506294329344::0:0
+:5557e22f597a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:93835945267200::0:0
+:7f8dbc27ebb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f46698e0490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f4669d139f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f46698dd200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f7bf8865490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f0ac9da42b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f7bf8c8ea10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8c919b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f9354234df0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:140270748450816::0:0
+:7f8dbc22d9b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f326991d490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f933f8fda30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f8dbb959c90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:140246714191872::0:0
+:5626cc386830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94724634992640::0:0
+:7f3269d4d570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f933f3bf490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f933f7e8a10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f933f7ef570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f0ac9d3fa10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f0ac9d429b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f0ac9d499f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f7bf87f8230	@plt	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7fb4279149b0	PMPI_Bcast	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fb427918570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fb42791b9f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:5634c4a047e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94784637124608::0:0
+:7f32699269c0	cfree	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f933f8ccce0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:5557e22f5840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:93835945267200::0:0
+:7fca16dcd490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7fca171fd570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca172512c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f3269dbfd70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f933f8432c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f4669d5dbb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f0ade784be0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:139684658786304::0:0
+:7fca171e8e40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca16dd60e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f3269d9b0c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:56210ea367e0	MPI_Reduce@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94699979497472::0:0
+:7f3269da12c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f8dbbe00370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f933f83d0c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f3269d509f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f0ac9d93bb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f0ac9d940c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f0ac9d9a2c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7fca2bc4dcf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:140506294329344::0:0
+:7fb427965bb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fca1724abb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f3269d9abb0	PMPI_Comm_rank	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f467e755df0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:139940745990144::0:0
+:7fca16925cf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:140505938743296::0:0
+:7f4669873040	@plt	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f46698a43d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f8dbc28edf0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f7bf8cf2df0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8cf32b0	PMPI_Type_get_true_extent	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:5626cc38697a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94724634992640::0:0
+:7f3269475cf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:139854491308032::0:0
+:7f0ac9da3df0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7fca16dca200	_IO_file_write	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7fca1724b0c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fb42747b100	@plt	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f4669d82f40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f7bf8d07d70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f3269dbff40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f7c0d6dadf0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:140170777894912::0:0
+:7f326991c370	_IO_file_overflow	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7fb42798ad70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fb42758a260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fca1726ff40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca17270ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca1733c770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f933f3927e0	__printf_fp	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7fb427a57770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:5634c4a04840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94784637124608::0:0
+:7f3269d38e40	.plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f46698dd9a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f8dbc30ecf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f8dbc2349f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7fb4279f5cf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f933ef17c90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:140270392864768::0:0
+:7f933f861f40	MPI_Initialized	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7fb42756ecb0	poll	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f0ac9e017b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f3269e2ac80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f933f8c2190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:5635fe85797a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94789903413248::0:0
+:7f7bf8d68190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8d72c80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8d72cf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f3269e2acf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f3269e5ba30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f4669dedc80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f4669dedce0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f4669e4f770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f8dbc304190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f933f8ccc80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f4669d82d70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f0ac98a9100	@plt	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f0ac9e23c80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f0ac9e23cf0	mpirinitf_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f4669cfc330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f4669d83ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139940399525888::0:0
+:7f3269e2ace0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f8dbbdc53d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f8dbbdd18f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:56022e8577f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94567370420224::0:0
+:56022e857840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94567370420224::0:0
+:7fb43c356be0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:140412080934912::0:0
+:7f935422dbe0	_dl_rtld_di_serinfo	/lib64/ld-linux-x86-64.so.2:140270748450816::0:0
+:7f8dbc33fa30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7fca172dace0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7fca172dac80	mpirinitc_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f7bf8d507b0	MPIR_Dup_fn	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f326999f250	__write	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f8dbc22aa10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f0ac9998250	__write	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f7bf8ce92c0	PMPI_Get_address	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f3269d46a10	PMPI_Op_free	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f7bf8907260	__libc_alloca_cutoff	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f32699a3cb0	poll	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f4669966cb0	poll	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f0ac9d46570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f8dbc2a3d70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f7bf88ebcb0	poll	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f0ac9d324f0	poll@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7fb42756a250	__write	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fb4274ac3d0	swapcontext	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fca1726fd70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140505947865088::0:0
+:7f3269daadf0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7f8dbc2a4ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f933f862ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f7bf8ce30c0	MPI_Comm_size	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8c989f0	PMPI_Reduce	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f7bf8832420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f0ac9db9ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f7bf8da3a30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140170431430656::0:0
+:7f8dbbe83250	__write	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7fca16e4f250	__write	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f4669438c90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:139940390404096::0:0
+:7fb42798bba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7fca16e53cb0	poll	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f8dbbe01490	_IO_default_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7fb427975df0	PMPI_Type_get_extent_x	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f7bf88e7250	__write	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f933f3bc9a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:56167b79d830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94654560849920::0:0
+:7f933f861d70	PMPI_Init	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f933f38f8f0	vprintf	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:5557e22f5830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:93835945267200::0:0
+:7f0ac946ec90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:139684303200256::0:0
+:5626cc386840	MPI_Bcast@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94724634992640::0:0
+:5634c4a0497a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94784637124608::0:0
+:7f0ade796cf0	_dl_catch_error	/lib64/ld-linux-x86-64.so.2:139684658786304::0:0
+:7f8dbbdfe9a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f0ac9914f10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f933f49afb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f0ac99139a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7f3269475c90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:139854491308032::0:0
+:7f32699f8fb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f7bf8863f10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f8dbbedcfb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f46699bbfb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:139940394770432::0:0
+:7f7bf8940fb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:140170426675200::0:0
+:7f0ac99f1fb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:139684307566592::0:0
+:7fb4274e59a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7fca16dd69c0	cfree	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f326991a9a0	_IO_file_xsputn	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+:7f3269dc0ba0	PMPI_Is_thread_main	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:56022e857830	MPI_Comm_size@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94567370420224::0:0
+:7f0ac9e54a30	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:7f933f445cb0	poll	/lib/x86_64-linux-gnu/libc.so.6:140270397231104::0:0
+:7f327e792df0	_dl_debug_state	/lib64/ld-linux-x86-64.so.2:139854846894080::0:0
+:7fb4275c3fb0	__nss_group_lookup	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:563512b6c7f0	MPI_Comm_rank@plt	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94785947222016::0:0
+:7fca16d9a420	vfprintf	/lib/x86_64-linux-gnu/libc.so.6:140505943109632::0:0
+:7f8dbb959cf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:140246714191872::0:0
+:7f933ef17cf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:140270392864768::0:0
+:7f8dbc231570	PMPI_Alltoallv	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140246723313664::0:0
+:7f4669438cf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:139940390404096::0:0
+:7f933f92e770	.text	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140270401986560::0:0
+:7f3269e20190	MPII_Grequest_set_lang_f77	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139854500429824::0:0
+:7fb4279f5ce0	mpirinitc2_	/usr/lib/x86_64-linux-gnu/libmpich.so.0:140411734470656::0:0
+:7f8dbbdcb790	cuserid	/lib/x86_64-linux-gnu/libc.so.6:140246718558208::0:0
+:7f7bf83bdc90	_pthread_cleanup_push_defer	/lib/x86_64-linux-gnu/libpthread.so.0:140170422308864::0:0
+:7f7bf83bdcf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:140170422308864::0:0
+:7f0ac9d32330	memcpy@plt	/usr/lib/x86_64-linux-gnu/libmpich.so.0:139684312322048::0:0
+:563512b6c97a	main	/home/lw2ef/Documents/workspace/sniper/test/mpi/pi:94785947222016::0:0
+:7f0ac946ecf0	_pthread_cleanup_pop_restore	/lib/x86_64-linux-gnu/libpthread.so.0:139684303200256::0:0
+:7fb4274f10e0	__libc_malloc	/lib/x86_64-linux-gnu/libc.so.6:140411729715200::0:0
+:7f326991bf10	_IO_do_write	/lib/x86_64-linux-gnu/libc.so.6:139854495674368::0:0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc2ec7b0:7f8dbc33fa30:7f8dbc30ecf0:7f8dbc2a4ba0	1	24	40	23	366000000	0	0	0	3	934	2607000000	20000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca171e8e80:7fca16dd69c0	2	70	88	126	664000000	0	0	0	11	1405	4376000000	50000000	0	298000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca171e8e80	2	0	0	5	2000000	0	0	0	0	5	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269d38e80	2	0	0	5	2000000	0	0	0	0	5	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9d31e80:7f0ac991f9c0	2	66	80	136	726000000	0	0	0	10	1498	5262000000	60000000	0	358000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9d31e80	2	0	0	8	3000000	0	0	0	0	14	5000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0:7f933f8fda30:7f933f92e770	12	47	80	267	255000000	0	0	0	10	599	1628000000	93000000	0	162000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0:7f4669e1ea30:7f4669dedcf0:7f4669e1ea30	1	54	88	47	188000000	0	0	0	11	458	1855000000	25000000	0	163000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0:7f4669e1ea30:7f4669dedcf0	1	117	184	111	66000000	0	0	0	17	223	999000000	66000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8c80e80:7f7bf886e9c0	2	66	80	137	711000000	0	0	0	10	1390	5412000000	66000000	0	165000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc2ec7b0:7f8dbc33fa30:7f8dbc30ecf0	1	74	152	112	1401000000	0	0	0	9	2694	10051000000	83000000	0	205000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0:7f933f8fda30:7f933f8cccf0:7f933f8fda30	1	48	88	47	173000000	0	0	0	11	152	1007000000	25000000	0	148000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca172b87b0:7fca171e9330	1	0	0	0	0	0	0	0	0	11	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269e087b0:7f3269e5ba30	3	212	296	216	1194000000	0	0	0	29	2475	9561000000	116000000	0	462000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269e087b0:7f3269d39330:7f32699f8fb0	1	10	24	16	5000000	0	0	0	3	16	5000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9e017b0:7f0ac9d32330	1	1	8	0	0	0	0	0	0	2	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0:7f933f7db330:7f933f49afb0	1	10	24	16	5000000	0	0	0	3	16	5000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8d507b0:7f7bf8c81330	1	1	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0:7fb427a26a30:7fb427a57770	18	47	80	385	418000000	0	0	0	10	728	2168000000	138000000	0	140000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0:7fb427a26a30:7fb4279f5cf0	3	188	248	202	242000000	0	0	0	23	324	1363000000	94000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca171e93d0:7fca16dd60e0	2	60	112	76	353000000	0	0	0	14	314	2323000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669cfc3d0:7f46698e90e0	2	57	112	76	344000000	0	0	0	14	341	2465000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca171e93d0	2	0	0	5	2000000	0	0	0	0	10	4000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269d393d0:7f32699260e0	2	60	112	76	369000000	0	0	0	14	503	2683000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269d393d0	2	0	0	5	2000000	0	0	0	0	6	3000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca1725adf0:7fca1725b2b0	1	16	16	12	164000000	0	0	0	2	188	1720000000	4000000	0	160000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca1725adf0	1	19	24	24	11000000	0	0	0	2	39	19000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9d323d0:7f0ac991f0e0	2	60	112	76	335000000	0	0	0	14	298	1889000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669d6ddf0:7f4669d6e2b0	1	20	24	12	326000000	0	0	0	2	431	2764000000	3000000	0	323000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269daadf0:7f3269dab2b0	1	24	24	12	313000000	0	0	0	2	304	2672000000	3000000	0	310000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669d6ddf0	1	20	24	24	167000000	0	0	0	2	138	819000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f7db3d0:7f933f3c80e0	2	57	112	76	316000000	0	0	0	14	319	1681000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f7db3d0	2	0	0	5	2000000	0	0	0	0	5	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9da3df0:7f0ac9da42b0	1	16	16	12	417000000	0	0	0	2	790	4166000000	3000000	0	414000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f84cdf0:7f933f84d2b0	1	16	16	12	297000000	0	0	0	2	501	2284000000	3000000	0	294000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc21ce80	1	0	0	6	175000000	0	0	0	0	164	1513000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0:7fb427904330:7fb4275c3fb0	1	9	16	16	5000000	0	0	0	2	16	5000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0:7fb427904330	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f84cdf0	1	20	24	24	187000000	0	0	0	2	410	1720000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570	1	293	360	310	986000000	0	0	0	39	1613	8105000000	111000000	0	432000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669dcb7b0	1	41	48	18	7000000	0	0	0	6	86	193000000	7000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8c2190	3	17	24	71	184000000	0	0	0	3	250	1545000000	30000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570	1	292	352	324	1827000000	0	0	0	40	2770	14881000000	137000000	0	290000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9e017b0	4	119	136	124	861000000	0	0	0	15	951	6823000000	50000000	0	507000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0	4	97	120	142	1049000000	0	0	0	13	1069	8270000000	68000000	0	652000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0	1	158	200	122	348000000	0	0	0	24	703	2490000000	45000000	0	303000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570	1	264	320	309	940000000	0	0	0	39	1804	7266000000	109000000	0	354000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570	1	309	368	340	1522000000	0	0	0	43	2865	11829000000	126000000	0	363000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9e017b0	1	41	48	18	6000000	0	0	0	6	36	212000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0	1	164	200	119	319000000	0	0	0	23	487	1947000000	45000000	0	274000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0	1	154	200	121	181000000	0	0	0	25	434	1751000000	41000000	0	140000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f3269475cf0	2	8	8	9	321000000	0	0	0	1	544	2366000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16925cf0	2	8	8	9	300000000	0	0	0	1	299	2186000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8d68190	3	16	16	72	27000000	0	0	0	2	72	27000000	27000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279043d0	2	0	0	5	2000000	0	0	0	0	7	3000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc304190	5	2	8	109	43000000	0	0	0	1	137	532000000	43000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570	1	328	392	394	2826000000	0	0	0	44	5135	22341000000	208000000	0	154000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698dd9a0:7f46698dd200	1	25	32	37	12000000	0	0	0	4	51	16000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8d507b0	1	41	48	18	7000000	0	0	0	6	40	17000000	7000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698dd9a0:7f46698df370:7f46698def10	1	8	8	3	1000000	0	0	0	1	12	190000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb427975df0:7fb4279762b0	1	16	16	12	290000000	0	0	0	2	329	2270000000	3000000	0	287000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f326991a9a0:7f326991a200:7f326999f250	1	8	8	11	3000000	0	0	0	1	68	190000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0	1	173	208	142	221000000	0	0	0	25	324	1907000000	53000000	0	168000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc21d3d0	3	0	0	10	4000000	0	0	0	0	21	10000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb427975df0	1	16	16	24	175000000	0	0	0	2	465	1934000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc28edf0	3	18	24	73	28000000	0	0	0	2	100	197000000	28000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16dca9a0:7fca16dcc370:7fca16dcbf10	1	8	8	3	1000000	0	0	0	1	9	3000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac99139a0:7f0ac9913200:7f0ac9998250	1	8	8	11	3000000	0	0	0	1	11	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac99139a0:7f0ac9913200	1	27	40	37	12000000	0	0	0	4	37	12000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac99139a0:7f0ac9915370:7f0ac9914f10	1	8	8	3	1000000	0	0	0	1	3	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698dd9a0:7f46698df370	1	45	56	41	592000000	0	0	0	6	963	4590000000	30000000	0	206000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698dd9a0	1	86	96	90	210000000	0	0	0	12	122	851000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f3bc9a0:7f933f3bc200:7f933f441250	1	8	8	11	3000000	0	0	0	1	85	211000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279eb190	3	17	24	71	182000000	0	0	0	3	353	1151000000	30000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0	4	105	128	142	1038000000	0	0	0	13	1829	7941000000	68000000	0	648000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f326991a9a0:7f326991c370	1	41	48	41	605000000	0	0	0	6	1042	4776000000	30000000	0	198000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f326991a9a0	1	86	96	90	241000000	0	0	0	12	142	961000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f3269475c90	1	10	24	11	3000000	0	0	0	3	11	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16dca9a0:7fca16dcc370	1	47	56	41	567000000	0	0	0	6	820	4561000000	30000000	0	155000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16dca9a0	1	86	96	90	180000000	0	0	0	12	442	1216000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570	1	277	336	310	1015000000	0	0	0	39	1675	7884000000	111000000	0	410000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac99139a0:7f0ac9915370	1	41	48	41	492000000	0	0	0	6	867	4397000000	30000000	0	154000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f3bc9a0:7f933f3be370	1	45	56	41	492000000	0	0	0	6	713	3948000000	30000000	0	135000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f3bc9a0	1	86	96	90	180000000	0	0	0	12	285	789000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc2ec7b0	1	41	48	17	5000000	0	0	0	6	62	17000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933ef17c90	1	10	24	11	3000000	0	0	0	3	34	10000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf88629a0:7f7bf8862200	1	27	40	37	12000000	0	0	0	4	37	12000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb427040cf0	2	8	8	9	327000000	0	0	0	1	292	3119000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf88629a0	1	86	96	89	176000000	0	0	0	12	158	1407000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf83bdc90	1	10	24	11	4000000	0	0	0	3	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0	1	0	0	2	2000000	0	0	0	0	10	203000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274e59a0:7fb4274e5200:7fb42756a250	1	8	8	11	3000000	0	0	0	1	11	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274e59a0:7fb4274e7370:7fb4274e6f10	1	8	8	3	1000000	0	0	0	1	3	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbb959cf0	2	8	8	10	318000000	0	0	0	1	629	2541000000	10000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274e59a0:7fb4274e7370	1	45	56	41	492000000	0	0	0	6	702	3215000000	30000000	0	154000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274e59a0	1	86	96	90	161000000	0	0	0	12	117	668000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb427040c90	1	10	24	11	3000000	0	0	0	3	11	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdfe9a0:7f8dbbdfe200:7f8dbbe83250	1	8	8	11	4000000	0	0	0	1	11	4000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdfe9a0:7f8dbbdfe200	1	25	32	35	11000000	0	0	0	4	35	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc21ce80:7f8dbbe0a9c0	1	66	80	69	1958000000	0	0	0	10	2177	15312000000	67000000	0	172000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdfe9a0:7f8dbbe00370:7f8dbbdfff10	1	8	8	2	1000000	0	0	0	1	2	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0:7fca16d60230:7fca16ea8fb0	1	0	0	19	664000000	0	0	0	0	501	4382000000	29000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0:7f4669873230	1	0	0	2	2000000	0	0	0	0	3	5000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbb959c90	1	10	24	11	4000000	0	0	0	3	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0:7f933f352230	1	0	0	2	2000000	0	0	0	0	2	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0:7f32698b0230	1	0	0	2	1000000	0	0	0	0	4	4000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0:7f4669873100:7f46699bbfb0	1	29	40	20	11000000	0	0	0	5	131	47000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0:7f7bf87f8230:7f7bf8940fb0	1	0	0	19	648000000	0	0	0	0	606	4815000000	29000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0:7fca16d60100:7fca16ea8fb0	1	29	40	19	329000000	0	0	0	5	206	2835000000	21000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0:7f933f352100:7f933f49afb0	1	29	40	20	11000000	0	0	0	5	23	172000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0:7f0ac98a9100:7f0ac99f1fb0	1	29	40	19	376000000	0	0	0	5	512	3648000000	21000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0:7fb42747b230:7fb4275c3fb0	1	0	0	20	936000000	0	0	0	0	1959	7003000000	33000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0:7f7bf87f8100:7f7bf8940fb0	1	29	40	19	321000000	0	0	0	5	333	1904000000	21000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0:7fb42747b230	1	0	0	2	2000000	0	0	0	0	6	3000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0:7f8dbbd94230	1	0	0	2	2000000	0	0	0	0	6	5000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0:7fca16e6f260	1	17	24	9	3000000	0	0	0	3	81	496000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0:7f933f461260	1	17	24	9	3000000	0	0	0	3	9	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0:7fca16d913d0	11	105	128	224	908000000	0	0	0	12	1226	6095000000	85000000	0	470000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0:7f8dbbd94100:7f8dbbedcfb0	1	29	40	21	12000000	0	0	0	5	146	400000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0:7f32698e13d0	11	113	128	224	884000000	0	0	0	12	1542	7567000000	85000000	0	497000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0	1	10	24	8	2000000	0	0	0	3	19	311000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0:7f933f3833d0	11	114	136	224	943000000	0	0	0	12	1095	7882000000	85000000	0	514000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0	1	599	680	926	4398000000	0	0	0	80	6357	36278000000	382000000	0	833000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0	1	10	24	8	2000000	0	0	0	3	12	3000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0:7f7bf8907260	1	17	24	9	3000000	0	0	0	3	9	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0	1	596	680	926	4755000000	0	0	0	80	7436	38148000000	382000000	0	859000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0	1	10	24	8	2000000	0	0	0	3	8	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0	1	10	24	8	2000000	0	0	0	3	9	5000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0:7fb42758a260	1	17	24	9	3000000	0	0	0	3	9	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e0790	1	25	32	22	6000000	0	0	0	4	22	6000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac9916490:7f0ac98a9230	1	0	0	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0	1	611	688	938	5294000000	0	0	0	82	6107	43486000000	401000000	0	862000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0	1	10	24	8	2000000	0	0	0	3	17	5000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16d97790	1	25	32	22	6000000	0	0	0	4	22	6000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698e7790	1	25	32	22	6000000	0	0	0	4	25	262000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16dcd490:7fca16d60230:7fca16ea8fb0	1	46	56	11	4000000	0	0	0	6	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16dcd490:7fca16d60230	1	6	8	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420	1	401	440	420	2601000000	0	0	0	49	2560	19630000000	238000000	0	677000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0	1	608	680	938	5372000000	0	0	0	81	8297	41698000000	401000000	0	972000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0	1	10	24	8	2000000	0	0	0	3	39	14000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420	1	163	224	155	795000000	0	0	0	22	1956	7984000000	77000000	0	183000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+5626cc38697a:5626cc386810	1	0	0	2	1000000	0	0	0	0	3	2000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3bf490:7f933f352230:7f933f49afb0	1	46	56	11	4000000	0	0	0	6	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3bf490:7f933f352230	1	0	0	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3bf490	4	63	72	203	1204000000	0	0	0	8	1459	10760000000	94000000	0	154000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698e0490:7f4669873230:7f46699bbfb0	1	46	56	11	4000000	0	0	0	6	80	26000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698e0490:7f4669873230	1	0	0	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698b0040:7f32699f8fb0	3	37	48	60	1540000000	0	0	0	6	2569	12773000000	50000000	0	329000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf8865490:7f7bf87f8230	1	0	0	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf8865490	4	62	72	200	1085000000	0	0	0	8	1567	8152000000	96000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420	1	382	424	422	3475000000	0	0	0	47	5198	27043000000	257000000	0	617000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f4669873040:7f46699bbfb0	3	37	48	60	2065000000	0	0	0	6	3308	16082000000	49000000	0	365000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420	1	170	240	155	782000000	0	0	0	23	1268	7247000000	77000000	0	202000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f4669873040	3	15	16	3	2000000	0	0	0	1	22	17000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810	1	0	0	2	1000000	0	0	0	0	8	4000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810	1	0	0	2	1000000	0	0	0	0	2	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00	1	36	48	30	16000000	0	0	0	6	30	16000000	16000000	0	0	0	2	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420	1	390	432	423	3335000000	0	0	0	48	6257	26628000000	253000000	0	496000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420	1	162	224	155	746000000	0	0	0	23	1790	6136000000	77000000	0	200000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+563512b6c97a:563512b6c810	1	0	0	2	1000000	0	0	0	0	16	8000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274b2790	1	25	32	22	6000000	0	0	0	4	22	6000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf87f8040	3	15	16	3	2000000	0	0	0	1	192	108000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420	1	386	424	425	3533000000	0	0	0	47	7653	28950000000	263000000	0	498000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274e8490:7fb42747b230:7fb4275c3fb0	1	46	56	11	4000000	0	0	0	6	17	9000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274e8490	4	63	72	203	1168000000	0	0	0	8	2315	10339000000	94000000	0	144000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420	1	178	248	159	756000000	0	0	0	25	2449	5936000000	81000000	0	187000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+5635fe85797a:5635fe857810	1	0	0	2	1000000	0	0	0	0	2	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb42747b040:7fb4275c3fb0	3	37	48	60	1475000000	0	0	0	6	9084	11788000000	50000000	0	295000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb42747b040	3	15	16	4	2000000	0	0	0	1	390	381000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbe01490:7f8dbbd94230:7f8dbbedcfb0	1	46	56	11	4000000	0	0	0	6	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbe01490:7f8dbbd94230	1	0	0	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbe01490	4	63	72	203	1043000000	0	0	0	8	2660	7917000000	97000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420	1	384	424	422	3136000000	0	0	0	47	14657	23229000000	253000000	0	500000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00	1	36	48	30	16000000	0	0	0	6	137	77000000	16000000	0	0	0	2	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420	1	392	432	412	3593000000	0	0	0	48	19802	29147000000	258000000	0	485000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420	1	174	264	158	912000000	0	0	0	24	1919	7368000000	80000000	0	186000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9d9a2c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e2acf0	2	25	32	14	6000000	0	0	0	4	287	601000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8432c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669dedcf0	2	25	32	14	6000000	0	0	0	4	296	113000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb4279f5cf0	2	25	32	14	6000000	0	0	0	4	1004	350000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40:7f9354238690:7f933f445cb0	1	18	24	9	4000000	0	0	0	3	9	4000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d840:7f8dbc22d9b0:7f8dbc22aa10:7f8dbc304190	2	34	40	46	206000000	0	0	0	5	2810	1627000000	13000000	0	193000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d840:7f8dbc22d9b0:7f8dbc22aa10:7f8dbc2ec7b0	5	59	64	132	207000000	0	0	0	7	4239	1815000000	43000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d840:7f8dbc22d9b0:7f8dbc22aa10	1	312	368	384	2205000000	0	0	0	44	34011	15907000000	142000000	0	642000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d840:7f8dbc22d9b0	1	132	144	114	34000000	0	0	0	18	262	86000000	34000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7f0	1	0	0	1	154000000	0	0	0	0	1637	722000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40:7f9354238690:7f935422dbe0	1	380	672	501	3155000000	0	0	0	76	55491	26835000000	183000000	0	2792000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a	1	69	88	262561	152170000000	0	37500	37502	10	2083473	1218203000000	150176000000	0	384000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40	1	10	16	2	1000000	0	0	0	2	341	116000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0	1	9	16	2	1000000	0	0	0	2	694	242000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40:7fb43c361690:7fb43c356be0:7fb43c35ddf0	2	27	48	46	346000000	0	0	0	5	5380	2200000000	18000000	0	328000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0	1	9	16	2	1000000	0	0	0	2	884	305000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770	1026	73	120	21971	8258000000	0	0	0	15	138640	49516000000	7779000000	0	179000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f8cccf0:7f933f862ba0	1	28	40	25	515000000	0	0	0	3	7461	3096000000	20000000	0	157000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f8cccf0	3	278	400	308	748000000	0	0	0	32	13240	6098000000	106000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8c2190	1	17	24	23	196000000	0	0	0	3	4504	1748000000	7000000	0	189000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10	1	342	384	298	1869000000	0	0	0	46	27175	13077000000	130000000	0	158000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840	1	0	0	2	155000000	0	0	0	0	648	1091000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367f0	1	0	0	1	158000000	0	0	0	0	1610	718000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36830:7f933f83d0c0	1	50	72	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36830	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbd94040	3	15	16	7	3000000	0	0	0	1	468	268000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770	1338	73	120	28270	10865000000	0	0	0	15	173069	63305000000	10063000000	0	348000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57f0:7fb427965bb0	1	74	80	2	193000000	0	0	0	10	1508	714000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5830:7fb4279660c0	1	48	72	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5830	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40:7f7c0d6de690:7f7c0d6d3be0:7f7c0d6e5cf0	2	44	72	91	3139000000	0	0	0	9	2288	3903000000	32000000	0	3107000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40:7f7c0d6de690:7f7c0d6d3be0:7f7c0d6dadf0	2	27	48	46	2001000000	0	0	0	5	1111	2371000000	18000000	0	1983000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40:7f7c0d6de690:7f7c0d6d3be0	1	381	672	499	18737000000	0	0	0	76	57234	38459000000	183000000	0	17521000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40:7f7c0d6de690	1	112	120	46	15000000	0	0	0	13	4455	1546000000	15000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8d72cf0:7f7bf8d08ba0	1	28	40	25	3108000000	0	0	0	3	764	3364000000	19000000	0	1064000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8d72cf0	3	285	408	309	2494000000	0	0	0	32	31952	15566000000	103000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30	3	425	608	8282952	2866980000000	0	0	0	74	14192181	4947894000000	2839571000000	0	17513000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d68190	1	17	24	23	1048000000	0	0	0	3	1190	1452000000	7000000	0	1041000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840	1	0	0	0	0	0	0	0	0	43	15000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577f0	1	0	0	1	1063000000	0	0	0	0	82	1090000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857830:7f7bf8ce30c0	1	50	72	48	17000000	0	0	0	8	10422	3624000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857830	1	0	0	1	1000000	0	0	0	0	75	25000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8d72cf0:7f7bf8d72c80	1	19	40	19	8000000	0	0	0	2	943	329000000	8000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8d72cf0	1	28	64	29	12000000	0	0	0	7	4490	1565000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f32699a3cb0	137	0	0	804	376000000	0	0	0	0	2638	1013000000	376000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40:7f327e796690:7f32699a3cb0	1	18	24	6	2000000	0	0	0	3	485	172000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40:7f327e796690:7f327e78bbe0:7f327e79dcf0	2	44	72	91	3166000000	0	0	0	9	2611	4054000000	32000000	0	3134000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40:7f327e796690:7f327e78bbe0:7f327e792df0	2	27	48	46	2001000000	0	0	0	5	1264	3488000000	18000000	0	1983000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40:7f327e796690:7f327e78bbe0	1	380	672	501	18794000000	0	0	0	76	56581	38665000000	183000000	0	17578000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40	1	11	16	2	1000000	0	0	0	2	4254	1504000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0:7f7bf87f8100	1	0	0	1	1000000	0	0	0	0	7	6000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e2acf0:7f3269e5ba30	2	113	152	111	562000000	0	0	0	18	19368	10666000000	38000000	0	524000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10	1	320	360	255	10026000000	0	0	0	42	16874	19729000000	119000000	0	1175000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0	1	131	144	115	35000000	0	0	0	18	16200	5726000000	35000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0:7f933f352230:7f933f49afb0	1	0	0	20	628000000	0	0	0	0	507	4542000000	33000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577f0:7f3269d9abb0	1	75	80	58	4094000000	0	0	0	10	4046	5502000000	29000000	0	1003000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577f0	1	0	0	1	1035000000	0	0	0	0	50	1055000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857830	1	0	0	1	1000000	0	0	0	0	72	26000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40:7f3269e2acf0	1	28	64	29	12000000	0	0	0	7	1603	569000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40:7f3269e8c770	1	0	0	0	0	0	0	0	0	48	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40	1	10	16	2	1000000	0	0	0	2	2072	1822000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0	59	9	16	149	67000000	0	0	0	2	1241	451000000	67000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770	61514	73	120	1282735	461229000000	0	0	0	15	3509450	1301416000000	458148000000	0	2087000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca172dacf0:7fca17270ba0	1	20	32	25	3131000000	0	0	0	3	762	3393000000	19000000	0	1087000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca172dacf0	3	285	408	302	2415000000	0	0	0	32	13331	8957000000	99000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30	3	432	608	2556305	900563000000	0	0	0	73	21698772	7670116000000	876396000000	0	15364000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0	3	124	136	150	5369000000	0	0	0	15	9059	15557000000	102000000	0	3254000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10	1	312	352	255	10052000000	0	0	0	41	10390	17337000000	119000000	0	1213000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047f0:7fca1724abb0	1	75	80	2	1020000000	0	0	0	10	2578	1943000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04830	1	0	0	0	0	0	0	0	0	49	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70:7fca1726ff40:7fca172dacf0:7fca172dace0	1	0	8	0	0	0	0	0	0	39	15000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70:7fca1726ff40:7fca172dacf0	1	0	40	0	0	0	0	0	5	183	65000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70:7fca1726ff40:7fca1733c770	1	0	0	0	0	0	0	0	0	2	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40	1	10	16	2	1000000	0	0	0	2	3985	1385000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669966cb0	23	0	0	142	67000000	0	0	0	0	465	184000000	67000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40:7f467e759690:7f467e74ebe0	1	380	672	501	18754000000	0	0	0	76	501	18754000000	183000000	0	17538000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770	24994	73	120	518127	189247000000	0	0	0	15	24412189	8610889000000	186162000000	0	2095000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669dedcf0:7f4669e1ea30	2	118	160	109	526000000	0	0	0	19	13571	6700000000	38000000	0	488000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8dd4770:7f7bf8da3a30:7f7bf8c813d0:7f7bf886e0e0:7f7bf88674a0:7f7bf88f2af0	1	0	8	0	96928000000	0	0	0	0	1962	97604000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0:7f7bf87f8230	1	0	0	2	1000000	0	0	0	0	22	8000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8dd4770:7f7bf8da3a30:7f7bf8c813d0:7f7bf886e0e0	1	0	48	0	0	0	0	0	6	1633	568000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8dd4770:7f7bf8da3a30:7f7bf8c813d0	1	0	8	0	0	0	0	0	1	96	34000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669dedcf0:7f4669d83ba0	1	28	40	25	3128000000	0	0	0	3	927	3441000000	20000000	0	1083000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0	1	131	144	113	180000000	0	0	0	18	9683	4186000000	45000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac999ccb0	6	0	0	38	18000000	0	0	0	0	240	88000000	18000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7f0	1	0	0	1	1055000000	0	0	0	0	23	1063000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c830	1	0	0	0	0	0	0	0	0	52	18000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40:7f4669dedcf0:7f4669dedce0	1	0	8	0	0	0	0	0	0	66	23000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40:7f4669e4f770	1	0	0	0	0	0	0	0	0	6	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40:7f0ade78f690:7f0ac999ccb0	1	18	24	9	4000000	0	0	0	3	9	4000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40:7f0ade78f690:7f0ade784be0:7f0ade78bdf0:7f0ade796cf0	4	31	48	107	4308000000	0	0	0	6	107	4308000000	39000000	0	2148000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40	1	10	16	2	1000000	0	0	0	2	2	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0	7	9	16	18	8000000	0	0	0	2	160	62000000	8000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770	7834	73	120	162894	59744000000	0	0	0	15	26298326	9603564000000	58363000000	0	1227000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e23cf0:7f0ac9e54a30	2	114	160	109	696000000	0	0	0	19	1205	5068000000	38000000	0	658000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e23cf0:7f0ac9db9ba0	1	28	40	25	3273000000	0	0	0	3	25	3273000000	19000000	0	1124000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16dcd490	4	64	72	203	1250000000	0	0	0	8	1429	10175000000	94000000	0	125000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e23cf0	3	284	408	305	2508000000	0	0	0	32	924	4580000000	103000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30	3	418	592	326269	132440000000	0	0	0	71	978952	596529000000	111744000000	0	13126000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e19190	1	17	24	23	1065000000	0	0	0	3	23	1065000000	7000000	0	1058000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10	1	320	360	255	10456000000	0	0	0	42	7854	15061000000	119000000	0	1236000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0	3	124	136	151	4607000000	0	0	0	15	23717	21542000000	104000000	0	2341000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867f0:7f0ac9d93bb0	1	74	80	2	1084000000	0	0	0	10	2	1084000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867f0	1	0	0	1	1101000000	0	0	0	0	1	1101000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386830	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a	1	72	104	262563	153196000000	0	37500	37502	10	2084895	1209696000000	150157000000	0	1296000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+7f0ac9db8d70:7f0ac9db8f40:7f0ac9e23cf0:7f0ac9e23ce0	1	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70:7f0ac9db8f40:7f0ac9e85770	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40:7fb4279f5cf0:7fb4279f5ce0	1	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70:7fca1726ff40:7fca172dacf0:7fca172dac80	1	1	32	0	0	0	0	0	1	236	82000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40:7fb4279f5cf0:7fb4279f5c80	1	1	32	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40:7fb4279f5cf0	1	0	40	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40:7f933f8cccf0	1	0	40	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40:7f933f8cccf0:7f933f8ccce0	1	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc2ec7b0:7f8dbc21d330	1	0	0	1	1000000	0	0	0	0	1	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40:7fb43c361690:7fb43c356be0	1	380	672	501	3124000000	0	0	0	76	57794	23040000000	183000000	0	2761000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f326991d490:7f32698b0230:7f32699f8fb0	1	41	48	11	4000000	0	0	0	6	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40:7fb43c361690:7fb43c356be0:7fb43c35ddf0:7fb43c368cf0	4	31	48	107	644000000	0	0	0	6	9029	3744000000	39000000	0	293000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9d323d0	2	0	0	5	2000000	0	0	0	0	5	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf83bdcf0	2	8	8	9	327000000	0	0	0	1	551	2145000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577f0:7f7bf8ce2bb0	1	75	80	58	4094000000	0	0	0	10	8694	7096000000	29000000	0	1003000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9da3df0	1	18	24	24	266000000	0	0	0	2	357	1326000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac99139a0	1	86	96	90	247000000	0	0	0	12	125	1206000000	26000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40:7f933f92e770:7f933f8fda30	2	22	440	0	0	0	0	0	6	0	104339530563	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70:7fca1726ff40:7fca1733c770:7fca1730ba30	2	25	62024	0	0	0	0	0	20	446785	892024791197	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70:7f0ac9db8f40:7f0ac9e85770:7f0ac9e54a30	2	25	14928	0	1969147352	0	0	0	8	0	296193463073	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8dd4770:7f7bf8da3a30	2	24271	197376	96590	61392000000	0	0	0	59	2559712	1840921592766	40271000000	0	20026000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7f0:7f4669d5dbb0	1	74	80	2	1016000000	0	0	0	10	5320	2865000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0	1	158	192	122	329000000	0	0	0	23	574	1944000000	45000000	0	284000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f352040	3	15	16	4	2000000	0	0	0	1	84	49000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698aa790	1	25	32	22	6000000	0	0	0	4	48	17000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40:7f3269e2acf0:7f3269e2ac80	1	19	40	19	8000000	0	0	0	2	1033	364000000	8000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e2acf0:7f3269dc0ba0	1	28	40	25	3135000000	0	0	0	3	1035	3494000000	19000000	0	1091000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30	6	609	824	42551	20179000000	0	0	0	98	293724	120671000000	14696000000	0	2904000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0:7f933f7db330	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0	1	139	152	115	35000000	0	0	0	19	23064	8013000000	35000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8cf2df0	1	18	24	23	171000000	0	0	0	2	462	1378000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172512c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40:7fca2bc46690:7fca2bc3bbe0:7fca2bc4dcf0	2	44	72	91	3162000000	0	0	0	9	1315	3596000000	32000000	0	3130000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0	5	174	184	234	2925000000	0	0	0	20	41220	22129000000	137000000	0	969000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca172b87b0:7fca1730ba30	3	209	296	216	1318000000	0	0	0	30	2503	9660000000	116000000	0	477000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669de3190	3	17	24	71	188000000	0	0	0	3	106	1036000000	30000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f3bc9a0:7f933f3bc200	1	25	32	37	12000000	0	0	0	4	45	15000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269e20190	3	17	24	71	188000000	0	0	0	3	319	765000000	30000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d830:7f8dbc27f0c0	1	50	72	0	0	0	0	0	8	72	24000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269e087b0	1	48	56	17	6000000	0	0	0	6	62	195000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40:7f4669e1ea30	1	2	8	0	0	0	0	0	1	193	66000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98a9040	3	15	16	3	2000000	0	0	0	1	11	6000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e2acf0	3	280	400	302	2452000000	0	0	0	31	22519	11527000000	100000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40	1	16	40	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0:7f8dbbd94230:7f8dbbedcfb0	1	0	0	20	643000000	0	0	0	0	405	5432000000	33000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8ce92c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c830:7f4669d5e0c0	1	50	72	0	0	0	0	0	8	7367	2561000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40:7f467e759690	1	112	120	42	14000000	0	0	0	13	42	14000000	14000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0:7f933f352100	1	0	0	1	1000000	0	0	0	0	1	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98a9040:7f0ac99f1fb0	3	37	48	63	654000000	0	0	0	6	722	4770000000	30000000	0	335000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8c813d0	2	0	0	5	2000000	0	0	0	0	8	6000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810	1	0	0	4	2000000	0	0	0	0	4	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0:7f0ac98a9230	1	0	0	2	1000000	0	0	0	0	2	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a	1	69	88	262562	151768000000	0	37500	37502	10	2104022	1215151000000	150097000000	0	336000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdfe9a0	1	86	96	91	28000000	0	0	0	12	91	28000000	28000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0	194	9	16	486	219000000	0	0	0	2	1833	681000000	219000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40	1	17	40	0	0	0	0	0	2	810	282000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40:7f0ade78f690	1	112	120	43	14000000	0	0	0	13	43	14000000	14000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40	1	17	40	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770	199352	73	120	4157812	1487011000000	0	0	0	15	7738186	2743939000000	1485006000000	0	1002000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269da12c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac946ecf0	2	8	8	9	319000000	0	0	0	1	203	1838000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70:7fca1726ff40	1	10	32	0	0	0	0	0	1	240	83000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0:7fb427a26a30:7fb4279f5cf0:7fb427a26a30	2	94	120	111	612000000	0	0	0	14	1189	3995000000	48000000	0	564000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0	1	160	208	120	200000000	0	0	0	25	473	1767000000	48000000	0	152000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10	1	345	384	329	1504000000	0	0	0	46	20357	8468000000	123000000	0	158000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40:7f467e759690:7f467e74ebe0:7f467e755df0:7f467e760cf0	4	31	48	107	4092000000	0	0	0	6	107	4092000000	39000000	0	2065000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40	1	61	80	46	1101000000	0	0	0	7	1668	1674000000	20000000	0	1081000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0:7f4669e1ea30	2	193	256	191	1480000000	0	0	0	30	3201	10834000000	95000000	0	631000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420	1	170	240	155	765000000	0	0	0	25	1208	6377000000	77000000	0	158000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40:7f0ade78f690:7f0ade784be0:7f0ade796cf0	2	44	72	91	3334000000	0	0	0	9	91	3334000000	32000000	0	3302000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0:7f32699bf260	1	17	24	9	3000000	0	0	0	3	18	6000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04830:7fca1724b0c0	1	51	72	0	0	0	0	0	8	4259	1523000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac9916490:7f0ac98a9230:7f0ac99f1fb0	1	41	48	11	4000000	0	0	0	6	29	10000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0	138	9	16	347	156000000	0	0	0	2	1986	724000000	156000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca172b87b0	1	41	48	18	7000000	0	0	0	6	77	26000000	7000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274e59a0:7fb4274e5200	1	25	32	37	12000000	0	0	0	4	37	12000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8c813d0:7f7bf886e0e0	2	60	112	76	350000000	0	0	0	14	428	1912000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16d60040:7fca16ea8fb0	3	37	48	60	1703000000	0	0	0	6	2974	13572000000	50000000	0	492000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a	1	67	96	262563	151419000000	0	37500	37502	10	2087104	1210994000000	150178000000	0	548000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40:7f0ade78f690:7f0ade784be0	1	380	672	499	17879000000	0	0	0	76	499	17879000000	183000000	0	16598000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40:7fb427a57770:7fb427a26a30	2	21	5800	0	2507562488	0	0	0	7	0	201325054642	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca172b87b0	4	120	136	121	1005000000	0	0	0	15	1690	8316000000	49000000	0	671000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386830:7f0ac9d940c0	1	48	72	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810	1	0	0	2	1000000	0	0	0	0	33	17000000	1000000	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840	1	0	0	2	159000000	0	0	0	0	491	1059000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70	1	18	24	13	6000000	0	0	0	3	1426	497000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9e017b0:7f0ac9d32330:7f0ac99f1fb0	1	10	24	16	5000000	0	0	0	3	73	165000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0:7f7bf88293d0	11	113	128	224	1031000000	0	0	0	12	1508	9441000000	85000000	0	628000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269daadf0	1	18	24	24	171000000	0	0	0	2	413	1752000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40:7f327e796690:7f327e78bbe0:7f327e792df0:7f327e79dcf0	4	31	48	107	4072000000	0	0	0	6	8073	6901000000	39000000	0	2045000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc28edf0:7f8dbc28f2b0	3	16	16	36	323000000	0	0	0	2	589	2743000000	11000000	0	312000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f326991d490:7f32698b0230	1	0	0	4	1000000	0	0	0	0	4	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0:7f32698b0100	1	0	0	1	1000000	0	0	0	0	4	3000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0	24	9	16	66	27000000	0	0	0	2	379	137000000	27000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269e087b0:7f3269d39330	1	1	8	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40:7f3269e5ba30	1	27	32	13	5000000	0	0	0	4	1704	603000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40:7f7c0d6de690:7f7bf88ebcb0	1	18	24	6	2000000	0	0	0	3	270	95000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669d642c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30	9	626	864	55928	26003000000	0	0	0	101	368756	156257000000	19329000000	0	2890000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40:7fca2bc46690:7fca2bc3bbe0:7fca2bc42df0	2	27	48	46	2001000000	0	0	0	5	2168	2756000000	18000000	0	1983000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40:7fb43c361690:7fb43c356be0:7fb43c368cf0	2	44	72	91	558000000	0	0	0	9	8779	3573000000	32000000	0	526000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420	1	390	432	422	3344000000	0	0	0	48	5091	25105000000	253000000	0	497000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf88ebcb0	193	0	0	1206	555000000	0	0	0	0	2876	1137000000	555000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10	1	331	376	298	9764000000	0	0	0	45	9082	14834000000	130000000	0	1055000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40:7f4669e4f770:7f4669e1ea30	2	26	28680	0	2317030102	0	0	0	12	102059	503236909942	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0	1	182	208	140	875000000	0	0	0	25	944	6842000000	119000000	0	144000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0:7f8dbbd94100	1	0	0	3	2000000	0	0	0	0	4	4000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0:7f0ac99b8260	1	17	24	9	3000000	0	0	0	3	9	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d840:7f8dbc22d9b0:7f8dbc22aa10:7f8dbc2ec7b0:7f8dbc33fa30	9	251	416	591	4075000000	0	0	0	41	55961	33446000000	301000000	0	816000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0	1	596	680	926	4502000000	0	0	0	80	6093	34016000000	382000000	0	867000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40:7fb427a57770	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70	1	1	8	0	96825000000	0	0	0	1	26894235	10384668000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16925c90	1	10	24	11	3000000	0	0	0	3	26	13000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca172dacf0:7fca1730ba30	2	115	144	112	503000000	0	0	0	17	6037	5389000000	37000000	0	466000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70	1	1	8	0	96825000000	0	0	0	1	0	96825000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb4279f5cf0:7fb427a26a30	2	113	144	111	508000000	0	0	0	17	7697	4313000000	38000000	0	470000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0	3	128	136	150	5616000000	0	0	0	15	5920	13574000000	102000000	0	3381000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669dedcf0	3	274	400	311	2448000000	0	0	0	32	15310	105452000000	103000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca172dacf0	2	25	32	14	6000000	0	0	0	4	356	689000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16dca9a0:7fca16dca200:7fca16e4f250	1	8	8	11	3000000	0	0	0	1	78	180000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30	6	606	808	1042108	377137000000	0	0	0	96	2355639	1082837000000	356280000000	0	12444000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70:7f0ac9db8f40:7f0ac9e23cf0	1	0	40	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a	1	72	96	262574	153122000000	0	37500	37502	10	2100743	1213570000000	150161000000	0	1238000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00	1	28	40	33	17000000	0	0	0	5	103	45000000	17000000	0	0	0	3	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e54a30:7f0ac9e85770:7f0ac9d324f0:7f0ac9d31e40:7f0ade78f690:7f0ade784be0:7f0ade78bdf0	2	27	48	46	2136000000	0	0	0	5	46	2136000000	18000000	0	2118000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40:7f4669dedcf0:7f4669dedc80	1	1	32	0	0	0	0	0	1	577	201000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70:7f0ac9db8f40	1	16	40	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279043d0:7fb4274f10e0	2	57	112	76	343000000	0	0	0	14	264	2178000000	31000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8dd4770:7f7bf8c814f0:7f7bf8c80e40:7f7c0d6de690:7f7c0d6d3be0:7f7c0d6dadf0:7f7c0d6e5cf0	4	31	48	107	4100000000	0	0	0	6	11191	7956000000	39000000	0	2065000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7f0:7f8dbc27ebb0	1	75	80	2	189000000	0	0	0	10	1833	1160000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f389790	1	25	32	22	6000000	0	0	0	4	113	410000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0	4	186	200	192	2751000000	0	0	0	21	23678	20885000000	124000000	0	936000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fca1726fd70	1	6	16	0	96825000000	0	0	0	2	3549	99219000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70:7fb42798af40:7fb427a26a30	1	2	8	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc2ec7b0:7f8dbc21d330:7f8dbbedcfb0	1	11	24	16	8000000	0	0	0	3	33	15000000	8000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf882f790	1	25	32	22	6000000	0	0	0	4	22	6000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70	1	1	8	0	96825000000	0	0	0	1	4348	98336000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0	1	10	24	8	2000000	0	0	0	3	8	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40:7f933f8fda30	1	2	8	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40:7f467e759690:7f467e74ebe0:7f467e755df0	2	27	48	46	1993000000	0	0	0	5	46	1993000000	18000000	0	1975000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40:7f9354238690:7f935422dbe0:7f935423fcf0	2	44	72	91	531000000	0	0	0	9	7378	3789000000	32000000	0	499000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840	1	0	0	0	0	0	0	0	0	25	9000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30	3	421	592	5921655	2044381000000	0	0	0	72	15915024	5577330000000	2021253000000	0	14338000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00	1	28	40	31	19000000	0	0	0	5	39	594000000	19000000	0	0	0	3	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0:7f4669982260	1	17	24	9	3000000	0	0	0	3	9	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0:7f0ac98a9100	1	0	0	1	1000000	0	0	0	0	4	2000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca172d0190	3	17	24	72	27000000	0	0	0	3	128	203000000	27000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40:7fca2bc46690:7fca2bc3bbe0	1	380	672	499	18713000000	0	0	0	76	15929	24195000000	183000000	0	17501000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc2ec7b0	5	105	136	109	654000000	0	0	0	14	1302	5519000000	61000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0:7f32698b0230:7f32699f8fb0	1	0	0	19	699000000	0	0	0	0	528	5503000000	29000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70	1	18	24	13	6000000	0	0	0	3	1206	427000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0:7f4669873100	1	0	0	1	1000000	0	0	0	0	1	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb427918570:7fb4279d37b0:7fb427a26a30	2	290	440	983	3118000000	0	0	0	53	5385	27117000000	360000000	0	1980000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570	1	370	416	533	2592000000	0	0	0	50	4254	19569000000	273000000	0	784000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0	1	131	144	115	35000000	0	0	0	18	115	35000000	35000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0:7fb42791b9f0:7fb4279d37b0	1	41	48	18	8000000	0	0	0	6	38	14000000	8000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0:7f8dbbdc53d0	11	114	136	224	1031000000	0	0	0	12	1042	7964000000	85000000	0	558000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8d72cf0	2	25	32	14	6000000	0	0	0	4	332	710000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047e0:7fca172009f0:7fca171fd570:7fca172b87b0:7fca171e9330:7fca16ea8fb0	1	10	24	16	5000000	0	0	0	3	114	198000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7fb42798ad70	1	1	8	0	96825000000	0	0	0	1	26749127	10229560000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbd94040:7f8dbbedcfb0	3	37	48	60	1115000000	0	0	0	6	12044	8391000000	34000000	0	306000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40:7f3269e8c770:7f3269e5ba30	2	24271	141800	96589	61931000000	0	0	0	45	1810097	1581141124949	40271000000	0	20539000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0	4	172	184	192	8095000000	0	0	0	21	15199	24194000000	124000000	0	4395000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40:7f933f92e770	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb4279f5cf0:7fb42798bba0	1	28	40	23	496000000	0	0	0	3	5772	2496000000	19000000	0	150000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00	1	28	40	31	16000000	0	0	0	5	44	171000000	16000000	0	0	0	3	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+7fca1726fd70:7fca1726ff40:7fca1730ba30	1	2	8	0	0	0	0	0	1	45	15000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f326991d490	4	62	72	203	1325000000	0	0	0	8	1613	10588000000	94000000	0	155000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698e0490	4	63	72	203	1349000000	0	0	0	8	1942	10869000000	94000000	0	140000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a	1	66	88	262563	153085000000	0	37500	37502	10	2096999	1210805000000	150163000000	0	1238000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf8865490:7f7bf87f8230:7f7bf8940fb0	1	41	48	11	4000000	0	0	0	6	11	4000000	4000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570	1	317	376	337	1282000000	0	0	0	42	2005	10290000000	121000000	0	347000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8d507b0	4	119	136	123	857000000	0	0	0	15	646	7647000000	50000000	0	487000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8cf2df0:7f7bf8cf32b0	1	16	16	12	278000000	0	0	0	2	501	2439000000	3000000	0	275000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0	1	160	208	120	192000000	0	0	0	25	518	2137000000	45000000	0	147000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770:7f3269d394f0:7f3269d38e40:7f327e796690	1	112	120	43	15000000	0	0	0	13	6136	2168000000	15000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00	1	36	48	33	17000000	0	0	0	6	246	286000000	17000000	0	0	0	3	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0:7f4669873230:7f46699bbfb0	1	0	0	20	647000000	0	0	0	0	433	6269000000	33000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269d38e80:7f32699269c0	2	65	72	137	680000000	0	0	0	9	1515	5552000000	66000000	0	148000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0	1	131	144	115	35000000	0	0	0	18	8609	3024000000	35000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f326991a9a0:7f326991a200	1	27	40	37	12000000	0	0	0	4	56	17000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0:7f0ac98da3d0	11	113	128	224	960000000	0	0	0	12	963	7345000000	85000000	0	497000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57e0	1	0	0	0	0	0	0	0	0	8	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0:7fb4274ac3d0	11	114	136	224	927000000	0	0	0	12	1542	6221000000	85000000	0	504000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0	4	97	120	142	1141000000	0	0	0	13	1907	9489000000	63000000	0	774000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f57f0	1	0	0	1	158000000	0	0	0	0	1381	640000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70:7f0ac9db8f40:7f0ac9e54a30	1	2	8	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0:7fb42747b100:7fb4275c3fb0	1	29	40	21	12000000	0	0	0	5	24	164000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8da3a30	1	27	32	13	5000000	0	0	0	4	2652	917000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279eb190	1	17	24	23	204000000	0	0	0	3	2191	956000000	7000000	0	197000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840	1	0	0	0	0	0	0	0	0	25	9000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810	1	0	0	2	1000000	0	0	0	0	2	1000000	1000000	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e8577e0:7f3269d509f0:7f3269d4d570:7f3269e087b0	4	119	136	124	815000000	0	0	0	15	1167	6791000000	50000000	0	480000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0	1	139	152	113	195000000	0	0	0	19	504	1095000000	45000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdd47e0:7f8dbbdd18f0:7f8dbbea3260	1	17	24	9	3000000	0	0	0	3	22	7000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698b0040	3	15	16	4	2000000	0	0	0	1	76	44000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf88629a0:7f7bf8862200:7f7bf88e7250	1	8	8	11	3000000	0	0	0	1	11	3000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40:7f467e759690:7f4669966cb0	1	18	24	9	4000000	0	0	0	3	9	4000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a	1	69	88	262561	153505000000	0	37500	37502	10	2098245	1214495000000	150087000000	0	1259000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16d60040	3	15	16	4	2000000	0	0	0	1	7	156000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40:7fca2bc46690:7fca2bc3bbe0:7fca2bc42df0:7fca2bc4dcf0	4	31	48	107	4084000000	0	0	0	6	22728	12127000000	39000000	0	2057000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40:7f467e759690:7f467e74ebe0:7f467e760cf0	2	44	72	91	3150000000	0	0	0	9	91	3150000000	32000000	0	3118000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac946ec90	1	10	24	11	3000000	0	0	0	3	48	15000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0	1	611	688	943	5068000000	0	0	0	82	6307	37805000000	404000000	0	947000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f933f861d70:7f933f861f40:7f933f8cccf0:7f933f8ccc80	1	1	32	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40	1	61	80	46	1074000000	0	0	0	7	3106	2136000000	20000000	0	1054000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10	1	319	360	255	10010000000	0	0	0	42	20553	20485000000	119000000	0	1211000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf88387e0:7f7bf88358f0	1	593	672	926	4465000000	0	0	0	79	6358	34858000000	382000000	0	820000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac9916490	4	62	72	203	1220000000	0	0	0	8	1327	10035000000	88000000	0	325000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40:7fb43c361690:7fb42756ecb0	1	18	24	9	4000000	0	0	0	3	9	4000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420	1	164	240	157	780000000	0	0	0	25	986	6036000000	78000000	0	191000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669de3190	1	17	24	23	1029000000	0	0	0	3	3106	2100000000	7000000	0	1022000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0:7fca16d60230	1	0	0	2	1000000	0	0	0	0	6	6000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca16e53cb0	58	0	0	362	167000000	0	0	0	0	1533	578000000	167000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857830:7f3269d9b0c0	1	50	72	48	17000000	0	0	0	8	11092	3918000000	17000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0:7f933f8fda30	2	173	264	551	2120000000	0	0	0	31	3910	16384000000	213000000	0	1178000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf88629a0:7f7bf8864370	1	41	48	41	493000000	0	0	0	6	400	4132000000	30000000	0	150000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8d507b0:7f7bf8da3a30	3	212	296	216	1198000000	0	0	0	30	2300	9155000000	116000000	0	466000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc2ec7b0:7f8dbc33fa30	1	36	40	29	8000000	0	0	0	3	52	26000000	8000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f4669438cf0	2	8	8	9	339000000	0	0	0	1	584	2421000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e087b0:7f3269e5ba30:7f3269e8c770	142496	73	120	2971082	1071040000000	0	0	0	15	6715434	2423416000000	1070030000000	0	1010000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8dd4770	1	0	0	0	0	0	0	0	0	40	15000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16dca9a0:7fca16dca200	1	25	32	37	12000000	0	0	0	4	85	29000000	12000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf88629a0:7f7bf8864370:7f7bf8863f10	1	8	8	3	1000000	0	0	0	1	3	1000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9e19190	3	17	24	71	192000000	0	0	0	3	210	1379000000	30000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698ad420:7f46698b37e0:7f46698b08f0:7f46698a43d0	11	114	136	224	880000000	0	0	0	12	1748	7193000000	85000000	0	482000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8cccf0	2	25	32	14	6000000	0	0	0	4	278	442000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c840:7f4669d0c9b0:7f4669d09a10:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770:7f4669cfc4f0:7f4669cfbe40	1	10	16	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d840	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb4279f5cf0	3	278	400	303	799000000	0	0	0	32	11557	5210000000	98000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f3269dbfd70:7f3269dbff40:7f3269e2acf0:7f3269e2ace0	1	8	8	0	0	0	0	0	1	150	52000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f7ef570:7f933f8aa7b0:7f933f8fda30:7f933f8cccf0	1	122	184	111	66000000	0	0	0	16	403	956000000	66000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb42796c2c0	1	32	32	33	11000000	0	0	0	4	33	11000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8d507b0:7f7bf8c81330:7f7bf8940fb0	1	11	24	16	5000000	0	0	0	3	16	5000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274bb7e0:7fb4274b88f0:7fb42747b100	1	0	0	3	2000000	0	0	0	0	3	2000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933ef17cf0	2	8	8	9	338000000	0	0	0	1	307	2806000000	11000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0:7fca16d9d8f0:7fca16d60100	1	0	0	1	1000000	0	0	0	0	2	2000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40:7f9354238690:7f935422dbe0:7f9354234df0	2	27	48	46	319000000	0	0	0	5	4765	2430000000	18000000	0	301000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d7e0:7f8dbc2349f0:7f8dbc231570:7f8dbc21d3d0:7f8dbbe0a0e0	3	59	112	121	191000000	0	0	0	14	441	1220000000	37000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367e0:7f933f7f29f0:7f933f8aa7b0	1	41	48	17	6000000	0	0	0	6	34	212000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669cfc3d0	2	0	0	5	2000000	0	0	0	0	8	4000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f8dbc2a3d70	1	0	0	0	96825000000	0	0	0	0	27465207	10699935238066	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea367f0:7f933f83cbb0	1	75	80	2	185000000	0	0	0	10	1850	826000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d830	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00:7fca16d9a420:7fca16d9a420:7fca16da07e0	1	10	24	8	2000000	0	0	0	3	12	3000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f8cccf0:7f933f8fda30	2	115	144	109	403000000	0	0	0	17	3981	2756000000	39000000	0	364000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f3927e0:7f933f38f8f0	1	611	688	943	4965000000	0	0	0	82	7421	39282000000	404000000	0	802000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420:7f32698f07e0:7f32698ed8f0:7f32698b0100:7f32699f8fb0	1	29	40	19	318000000	0	0	0	5	219	2686000000	21000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0	3	124	136	150	5450000000	0	0	0	15	31453	23887000000	102000000	0	3257000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0:7f4669cfc330:7f46699bbfb0	1	10	24	16	5000000	0	0	0	3	20	233000000	5000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f4669438c90	1	10	24	11	3000000	0	0	0	3	19	7000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00:7f46698ad420:7f46698dd9a0:7f46698dd200:7f4669962250	1	8	8	11	3000000	0	0	0	1	85	202000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04810:7fca16da3f00	1	44	56	33	17000000	0	0	0	7	61	201000000	17000000	0	0	0	3	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40:7f9354238690	1	112	120	42	14000000	0	0	0	13	151	51000000	14000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386810:7f0ac98ecf00:7f0ac98e3420:7f0ac98e3420:7f0ac98e97e0:7f0ac98e68f0:7f0ac98a9230:7f0ac99f1fb0	1	0	0	19	682000000	0	0	0	0	518	5214000000	29000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36840:7f933f7eb9b0:7f933f7e8a10:7f933f8aa7b0:7f933f8fda30:7f933f92e770:7f933f7db4f0:7f933f7dae40:7f9354238690:7f935422dbe0:7f9354234df0:7f935423fcf0	4	31	48	107	718000000	0	0	0	6	10200	5035000000	39000000	0	375000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172d0190	1	17	24	23	1044000000	0	0	0	3	3471	3357000000	7000000	0	1037000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe8577e0:7f7bf8c989f0:7f7bf8c95570:7f7bf8c80e80	2	0	0	5	2000000	0	0	0	0	11	4000000	2000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857840:7f7bf8c919b0:7f7bf8c8ea10:7f7bf8d507b0:7f7bf8da3a30:7f7bf8d72cf0:7f7bf8da3a30	2	111	144	109	560000000	0	0	0	17	25728	12017000000	38000000	0	522000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0:7f4669e1ea30:7f4669e4f770	3	64	104	77	193000000	0	0	0	13	220	984000000	24000000	0	169000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdce420:7f8dbbdcb790	1	25	32	22	6000000	0	0	0	4	22	6000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857840:7f3269d499b0:7f3269d46a10:7f3269e20190	1	17	24	23	1048000000	0	0	0	3	673	1278000000	7000000	0	1041000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c7e0:7f4669d139f0:7f4669d10570:7f4669dcb7b0:7f4669cfc330	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f38c420:7f933f352040:7f933f49afb0	3	37	48	60	1591000000	0	0	0	6	2581	12665000000	50000000	0	339000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5635fe85797a:5635fe857810:7f7bf883bf00:7f7bf8832420:7f7bf8832420:7f7bf87f8040:7f7bf8940fb0	3	37	48	60	1543000000	0	0	0	6	5492	11858000000	49000000	0	315000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40:7fca2bc46690:7fca16e53cb0	1	18	24	9	4000000	0	0	0	3	5389	1907000000	3000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56167b79d97a:56167b79d810:7f8dbbdd7f00:7f8dbbdce420:7f8dbbdfe9a0:7f8dbbe00370	1	45	56	40	471000000	0	0	0	6	421	3828000000	25000000	0	138000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0	1	138	152	113	32000000	0	0	0	19	113	32000000	32000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8d72cf0:7f7bf8d72ce0	1	8	8	0	0	0	0	0	1	131	44000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc3867e0:7f0ac9d499f0:7f0ac9d46570:7f0ac9e017b0:7f0ac9e54a30	3	208	296	216	1276000000	0	0	0	30	2487	10306000000	116000000	0	483000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420:7f933f3bc9a0:7f933f3be370:7f933f3bdf10	1	8	8	3	1000000	0	0	0	1	12	183000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+563512b6c97a:563512b6c810:7f46698b6f00	1	28	40	33	17000000	0	0	0	5	64	34000000	17000000	0	0	0	3	0	0	0	1	0	0	0	2	0	0	0	1	0	0
+5635fe85797a	1	73	104	262580	152498000000	0	37500	37502	10	2094458	1206566000000	150062000000	0	1218000000	0	24991	0	0	0	12496	0	0	0	24992	0	0	0	12497	0	0
+56210ea3697a:56210ea36810:7f933f395f00:7f933f38c420	1	163	232	157	802000000	0	0	0	24	1535	6872000000	78000000	0	199000000	0	5	0	0	0	3	0	0	0	6	0	0	0	2	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40	1	10	16	2	1000000	0	0	0	2	130	46000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f32698ea420	1	386	424	422	3566000000	0	0	0	47	5526	27913000000	257000000	0	672000000	0	1	0	0	0	0	0	0	0	1	0	0	0	1	0	0
+5634c4a0497a:5634c4a04840:7fca171f99b0:7fca171f6a10:7fca172b87b0:7fca1730ba30:7fca1733c770:7fca171e94f0:7fca171e8e40:7fca2bc46690	1	112	120	43	14000000	0	0	0	13	3629	1287000000	14000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f0ac9db8d70:7f0ac9db8f40:7f0ac9e23cf0:7f0ac9e23c80	1	1	32	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f7bf8d07d70:7f7bf8d07f40:7f7bf8dd4770:7f7bf8da3a30:7f7bf8c813d0:7f7bf886e0e0:7f7bf88674a0	1	0	120	0	0	0	0	0	9	1802	627000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+7f4669d82d70:7f4669d82f40:7f4669dedcf0	1	0	40	0	0	0	0	0	5	690	240000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5626cc38697a:5626cc386840:7f0ac9d429b0:7f0ac9d3fa10:7f0ac9e017b0:7f0ac9e23cf0	2	25	32	14	6000000	0	0	0	4	544	332000000	6000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5810:7fb4274bef00:7fb4274b5420:7fb4274b5420:7fb4274e8490:7fb42747b230	1	0	0	4	1000000	0	0	0	0	6	2000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5557e22f597a:5557e22f5840:7fb4279149b0:7fb427911a10:7fb4279d37b0:7fb427a26a30:7fb427a57770:7fb4279044f0:7fb427903e40:7fb43c361690	1	112	120	42	14000000	0	0	0	13	306	105000000	14000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+56022e85797a:56022e857810:7f32698f3f00:7f32698ea420:7f326991a9a0:7f326991c370:7f326991bf10	1	8	8	3	1000000	0	0	0	1	14	4000000	1000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+5634c4a0497a:5634c4a047f0	1	0	0	1	1051000000	0	0	0	0	43	1065000000	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

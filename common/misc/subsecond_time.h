@@ -11,7 +11,7 @@
 #include <iostream>
 
 #define SUBSECOND_TIME_SIMPLE_OSTREAM
-
+using namespace std;
 class ComponentTime;
 class ComponentPeriod;
 
@@ -388,7 +388,10 @@ class ComponentBandwidth
 public:
    ComponentBandwidth(float bw_in_bits_per_ns)
     : m_bw_in_bits_per_us(bw_in_bits_per_ns * TimeConverter<float>::UStoNS(1)) // bits_per_ns * num_ns_per_us = bits_per_us
-   {}
+   {
+   	cout << "[LINGXI]: /common/misc/subsecondtime.h ComponentBandwidth in bw_in_bits_per_ns: " << to_string(bw_in_bits_per_ns) << endl;
+	//cout << "[LINGXI]: /common/misc/subsecondtime.h ComponentBandwidth in bw_
+   }
 
    // X bits * microseconds-per-cycle / bits/cycle = microseconds
    // Multiply by the time unit first to keep the integer result above zero

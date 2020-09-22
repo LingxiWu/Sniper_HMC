@@ -129,6 +129,8 @@ Simulator::Simulator()
 
 void Simulator::start()
 {
+   printf("[LINGXI]: in /sniper/common/system/simulator.cc::start\n");
+
    LOG_PRINT("In Simulator ctor.");
    
    // create a new Decoder object for this Simulator
@@ -279,6 +281,8 @@ void Simulator::disablePerformanceModels()
 
 void Simulator::setInstrumentationMode(InstMode::inst_mode_t new_mode, bool update_barrier)
 {
+
+   printf("[LINGXI]: in simulator /common/system/simulator.cc::setInstrumentationMode()\n");	
    if (new_mode != InstMode::inst_mode)
    {
       if (m_inst_mode_output && InstMode::inst_mode != InstMode::INVALID)

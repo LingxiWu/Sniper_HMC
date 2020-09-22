@@ -165,6 +165,7 @@ CacheCntlr::CacheCntlr(MemComponent::component_t mem_component,
 
    if (isMasterCache())
    {
+	//   cout << "master cache: " << to_string(core_id) << endl;
       /* Master cache */
       m_master = new CacheMasterCntlr(name, core_id, cache_params.outstanding_misses);
       m_master->m_cache = new Cache(name,
@@ -959,6 +960,8 @@ CacheCntlr::processShmemReqFromPrevCache(CacheCntlr* requester, Core::mem_op_t m
          }
          else if (m_master->m_dram_cntlr)
          {
+
+          //cout << "getHome(address): " << to_string(getHome(address)) << " m_core_id: " << to_string(m_core_id) << endl;
             // Direct DRAM access
             cache_hit = true;
             if (cache_block_info)
@@ -988,7 +991,7 @@ CacheCntlr::processShmemReqFromPrevCache(CacheCntlr* requester, Core::mem_op_t m
             }
          }
          else
-         {
+         {// cout << "getHome(address): " << to_string(getHome(address)) << " m_core_id: " << to_string(m_core_id) << endl;
             initiateDirectoryAccess(mem_op_type, address, isPrefetch != Prefetch::NONE, t_issue);
          }
       }
@@ -1153,7 +1156,7 @@ CacheCntlr::initiateDirectoryAccess(Core::mem_op_t mem_op_type, IntPtr address, 
          SharedCacheBlockInfo* cache_block_info = getCacheBlockInfo(address);
          if (cache_block_info && (cache_block_info->getCState() == CacheState::SHARED))
          {
-            processUpgradeReqToDirectory(address, m_shmem_perf, ShmemPerfModel::_USER_THREAD);
+		 processUpgradeReqToDirectory(address, m_shmem_perf, ShmemPerfModel::_USER_THREAD);
          }
          else
          {

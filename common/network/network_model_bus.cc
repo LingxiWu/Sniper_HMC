@@ -7,7 +7,7 @@
 #include "log.h"
 #include "dvfs_manager.h"
 #include "config.hpp"
-
+using namespace std;
 NetworkModelBusGlobal* NetworkModelBus::_bus_global[NUM_STATIC_NETWORKS] = { NULL };
 
 NetworkModelBusGlobal::NetworkModelBusGlobal(String name)
@@ -18,6 +18,7 @@ NetworkModelBusGlobal::NetworkModelBusGlobal(String name)
    , _time_used(SubsecondTime::Zero())
    , _total_delay(SubsecondTime::Zero())
 {
+   cout << "[LINGXI]: /common/network/NetworkModelBusGlobal. bandwidth: " << to_string(8 * Sim()->getCfg()->getFloat("network/bus/bandwidth")) << endl;
    String model_type = Sim()->getCfg()->getString("network/bus/queue_model/type");
    // Emulate the original code, with 10 cycles of latency for the history_list, and 0 outstanding transactions for the contention model
    SubsecondTime proc_period = ComponentPeriod::fromFreqHz(Sim()->getCfg()->getFloatArray("perf_model/core/frequency", 0)*1000000000);

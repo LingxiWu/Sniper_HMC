@@ -1,6 +1,8 @@
 #include "address_home_lookup.h"
 #include "log.h"
+#include <iostream>
 
+using namespace std;
 AddressHomeLookup::AddressHomeLookup(UInt32 ahl_param,
       std::vector<core_id_t>& core_list,
       UInt32 cache_block_size):
@@ -19,7 +21,11 @@ AddressHomeLookup::AddressHomeLookup(UInt32 ahl_param,
          "2^AHL param(%u) must be >= Cache Block Size(%u)",
          m_ahl_param, m_cache_block_size);
    m_total_modules = core_list.size();
+
+//   cout << "[LINGXI]: in /common/core/mem_sub/ahl.cc. m_ahl_param: " << to_string(m_ahl_param) << " m_cache_block_size: " << to_string(m_cache_block_size) << endl;
+
 }
+
 
 AddressHomeLookup::~AddressHomeLookup()
 {

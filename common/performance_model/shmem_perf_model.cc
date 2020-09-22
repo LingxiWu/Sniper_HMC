@@ -10,7 +10,8 @@ ShmemPerfModel::ShmemPerfModel():
    m_num_memory_accesses(0),
    m_total_memory_access_latency(SubsecondTime::Zero())
 {
-   for (UInt32 i = 0; i < NUM_CORE_THREADS; i++)
+cout << "[LINGXI]: in /common/perf_model/ShmemPerfModel. create a Sh_Perf_Model." << endl;
+     	for (UInt32 i = 0; i < NUM_CORE_THREADS; i++)
       m_elapsed_time[i] = SubsecondTime::Zero();
 }
 

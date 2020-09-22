@@ -7,10 +7,13 @@
 #include "queue_model_windowed_mg1.h"
 #include "log.h"
 #include "config.hpp"
+using namespace std;
 
 QueueModel*
 QueueModel::create(String name, UInt32 id, String model_type, SubsecondTime min_processing_time)
 {
+//cout << "[LINGXI]: /common/perf_mdl/q::create() Q_type: " << model_type << 
+//	" Name: " << name << endl;
    if (model_type == "basic")
    {
       bool moving_avg_enabled = Sim()->getCfg()->getBool("queue_model/basic/moving_avg_enabled");

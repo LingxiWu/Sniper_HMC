@@ -12,7 +12,7 @@ class DramPerfModelConstant : public DramPerfModel
    private:
       QueueModel* m_queue_model;
       SubsecondTime m_dram_access_cost;
-      ComponentBandwidth m_dram_bandwidth;
+      ComponentBandwidth m_dram_bandwidth; // /common/misc/SubsecondTime
 
       SubsecondTime m_total_queueing_delay;
       SubsecondTime m_total_access_latency;

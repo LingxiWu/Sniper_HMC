@@ -17,7 +17,6 @@
  *
  * Maybe allow the ability to have public and private memory space?
  */
-
 class AddressHomeLookup
 {
    public:
@@ -31,6 +30,7 @@ class AddressHomeLookup
       IntPtr getLinearBlock(IntPtr address) const;
       // Within home node, return unique, incrementing address to be used in cache set selection
       IntPtr getLinearAddress(IntPtr address) const;
+
 
    private:
       UInt32 m_ahl_param;

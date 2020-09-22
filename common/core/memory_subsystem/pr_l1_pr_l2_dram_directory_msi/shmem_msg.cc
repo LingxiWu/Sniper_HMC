@@ -108,7 +108,8 @@ namespace PrL1PrL2DramDirectoryMSI
          case DRAM_WRITE_REQ:
          case DRAM_READ_REP:
             // msg_type + address + cache_block
-            return (1 + sizeof(IntPtr) + m_data_length);
+//cout << to_string(1 + sizeof(IntPtr) + m_data_length) << endl;
+	    return (1 + sizeof(IntPtr) + m_data_length);
 
          default:
             LOG_PRINT_ERROR("Unrecognized Msg Type(%u)", m_msg_type);

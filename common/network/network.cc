@@ -103,6 +103,9 @@ void Network::netPullFromTransport()
 
       // I have received the packet
       NetworkModel *model = _models[g_type_to_static_network_map[packet.type]];
+//if(packet.type == 0){
+//      cout << "packet_type: " << to_string(packet.type) << endl;
+//}
       model->processReceivedPacket(packet);
 
       // asynchronous I/O support
@@ -116,7 +119,6 @@ void Network::netPullFromTransport()
          assert(0 <= packet.type && packet.type < NUM_PACKET_TYPES);
 
          callback(_callbackObjs[packet.type], packet);
-
          if (packet.length > 0)
             delete [] (Byte*) packet.data;
       }
@@ -149,6 +151,7 @@ NetworkModel* Network::getNetworkModelFromPacketType(PacketType packet_type)
 
 SInt32 Network::netSend(NetPacket& packet)
 {
+//	cout << "packet q_delay: " << to_string((SubSecond)packet.queue_delay.getNS()) << endl;
    assert(packet.type >= 0 && packet.type < NUM_PACKET_TYPES);
 
    NetworkModel *model = _models[g_type_to_static_network_map[packet.type]];
@@ -157,12 +160,17 @@ SInt32 Network::netSend(NetPacket& packet)
 
    std::vector<NetworkModel::Hop> hopVec;
    model->routePacket(packet, hopVec);
-
+//cout << to_string(hopVec.size()) << endl; // always 1
    Byte *buffer = packet.makeBuffer();
    SubsecondTime start_time = packet.time;
 
    for (UInt32 i = 0; i < hopVec.size(); i++)
    {
+	   /*
+	   cout << "send packet : type " << to_string((SInt32)packet.type) << " sender " << to_string(packet.sender) <<
+		 " dest " << to_string(hopVec[i].final_dest) << " next_hop " << to_string(hopVec[i].next_dest) << endl;
+	   */
+
       LOG_PRINT("Send packet : type %i, from %i, to %i, next_hop %i, core_id %i, time %s",
             (SInt32) packet.type, packet.sender, hopVec[i].final_dest, hopVec[i].next_dest, _core->getId(), itostr(hopVec[i].time).c_str());
       // LOG_ASSERT_ERROR(hopVec[i].time >= packet.time, "hopVec[%d].time(%llu) < packet.time(%llu)", i, hopVec[i].time, packet.time);
@@ -469,7 +477,10 @@ UInt32 Network::getModeledLength(const NetPacket& pkt)
       // 2 bytes for packet length
       UInt32 metadata_size = 1 + 2 * Config::getSingleton()->getCoreIDLength() + 2;
       UInt32 data_size = getCore()->getMemoryManager()->getModeledLength(pkt.data);
-      return metadata_size + data_size;
+
+      //cout << "packet type: " << to_string(pkt.type) <<  " metadata_size: " << to_string(1 + 2 * Config::getSingleton()->getCoreIDLength() + 2) << " data_size: " << to_string(data_size) << endl;
+ 
+     return metadata_size + data_size;
    }
    else
    {

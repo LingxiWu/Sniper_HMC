@@ -10,6 +10,7 @@ class QueueModel
 {
 public:
    QueueModel() {}
+  UInt32 q_core_id; // core_id
    virtual ~QueueModel() {}
 
    virtual SubsecondTime computeQueueDelay(SubsecondTime pkt_time, SubsecondTime processing_time, core_id_t requester = INVALID_CORE_ID) = 0;

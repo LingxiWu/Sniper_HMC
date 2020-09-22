@@ -6,6 +6,7 @@
 #include "subsecond_time.h"
 #include "dram_cntlr_interface.h"
 
+
 class ShmemPerf;
 
 // Note: Each Dram Controller owns a single DramModel object
@@ -34,6 +35,52 @@ class DramPerfModel
       void enable() { m_enabled = true; }
       void disable() { m_enabled = false; }
 
+/**
+ * the following add-ons handle data mapping and bandwidth/q_delay
+ */
+       
+      /* define HMC 2.0 -> 32 vaults * 256 MB_per_vault, bank_size 16MB, partition_size 32 MB*/
+      int cube_capacity = 8; // GB
+      int num_quandrants = 4;
+      int vaults_per_quandrant = 8; // 4/8
+      int banks_per_vault= 16; 
+      int dram_layers = 8;
+      int banks_per_partition = 2;
+      int banks_per_cube = num_quandrants * vaults_per_quandrant * dram_layers * banks_per_partition;
+      int block_size = 64; // 32/64/128 bytes
+     
+      /* define various bandwidth */
+      // the literature don't agree with each other. We use a fusion of Tesseract and Mondrian
+      // according to Tesseract, 512 GB/s internal bandwidth shared by 32 vaults, each TSV 2 Gb/s, 512/(2/8) = 2048 TSV, that is, 64
+      // tsv per vault.
+      int ext_link_bw = 120; // 4 links * 16 lanes/link * 30 Gbps * 2 dullplex = 480 GB total ext bw
+      int intra_vault_bw = 16; // GB/s. 8 in Mondrian, 10 in demystifying, 16 in Tesseract
+      // not sure about this, maybe should be handled by NOC and hop_latency
+//      int inter_quadrant_bw_close = 10; // diff vaults in the same quadrant GB/s
+//      int inter_quadrant_bw_far = 10; // diff vaults in diff quadrant
+//      int inter_cube_bw = 10; // GB/s
+//      according to Micron manual, an access to a local vault in a quadrant incurs lower latency than an access to a vault in another quadrant
+      int intra_quadrant_hop_latency = 2; 
+
+      /* about topology */
+      int system_mem_capacity = 32; // total memory capacity (GB)
+      int num_of_cubes = system_mem_capacity / cube_capacity;
+
+      /* maximum_parallel_request_serviceable: window size, how many concurrent memory requests we need to track. 
+       * This should be the minimal of ROB size and max of concurrent mem requests that can be serviced by HMC 
+       * for now just 100 -> same as Q depth: queue_model/history_list: max_list_size 
+       */
+      int max_parallel_requests = 100;
+
+      static int getBank(IntPtr address){	
+return 0;
+      }   
+      static int getVault(IntPtr address){
+return 0;
+      }	
+      static int getCube(IntPtr address){
+return 0;
+      }	      
       UInt64 getTotalAccesses() { return m_num_accesses; }
 };
 

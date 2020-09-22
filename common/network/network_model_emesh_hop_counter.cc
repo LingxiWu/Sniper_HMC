@@ -20,13 +20,20 @@ NetworkModelEMeshHopCounter::NetworkModelEMeshHopCounter(Network *net, EStaticNe
 {
    SInt32 total_cores = Config::getSingleton()->getTotalCores();
 
+   cout << "network model: common/network/emesh_hop_counter "<< endl;
+
    _meshWidth = (SInt32) floor (sqrt(total_cores));
    _meshHeight = (SInt32) ceil (1.0 * total_cores / _meshWidth);
+
+cout << "total cores: " << to_string(total_cores) << " _meshWidth: " << to_string(_meshWidth) << " _meshHeight: " << to_string(_meshHeight) << endl;
 
    try
    {
       _linkBandwidth = ComponentBandwidthPerCycle(Sim()->getDvfsManager()->getCoreDomain(net->getCore()->getId()), Sim()->getCfg()->getInt("network/emesh_hop_counter/link_bandwidth"));
+cout << "[LINGXI]: in common/network/network_emesh_hop_counter, _linkBandwidth: " << to_string(Sim()->getCfg()->getInt("network/emesh_hop_counter/link_bandwidth")) << endl;
       _hopLatency = ComponentLatency(Sim()->getDvfsManager()->getCoreDomain(net->getCore()->getId()), Sim()->getCfg()->getInt("network/emesh_hop_counter/hop_latency"));
+      cout << "[LINGXI]: in common/network/network_emesh_hop_counter, _hopLatency: " << to_string(Sim()->getCfg()->getInt("network/emesh_hop_counter/hop_latency")) << endl;
+
    }
    catch (...)
    {
@@ -51,12 +58,14 @@ void NetworkModelEMeshHopCounter::computePosition(core_id_t core,
 
 SInt32 NetworkModelEMeshHopCounter::computeDistance(SInt32 x1, SInt32 y1, SInt32 x2, SInt32 y2)
 {
+//	cout << "compute distance ... " << endl;
    return abs(x1 - x2) + abs(y1 - y2);
 }
 
 void NetworkModelEMeshHopCounter::routePacket(const NetPacket &pkt,
                                          std::vector<Hop> &nextHops)
 {
+//cout << "route packet ... " << endl;
    UInt32 pkt_length = getNetwork()->getModeledLength(pkt);
 
    SubsecondTime serialization_latency = computeSerializationLatency(pkt_length);
@@ -93,7 +102,10 @@ void NetworkModelEMeshHopCounter::routePacket(const NetPacket &pkt,
    }
    else
    {
+//  cout << " =============================================== " << endl;
       computePosition(pkt.receiver, dx, dy);
+
+      // lingxi-todo: add some logic to distinguish different hop_latency here
 
       SubsecondTime latency = computeDistance(sx, sy, dx, dy) * _hopLatency.getLatency();
       if (pkt.receiver != pkt.sender)
@@ -103,7 +115,7 @@ void NetworkModelEMeshHopCounter::routePacket(const NetPacket &pkt,
       h.final_dest = pkt.receiver;
       h.next_dest = pkt.receiver;
       h.time = pkt.time + latency;
-
+//cout << "hop_counter::routePacket() latency: " << to_string(latency.getNS()) << endl;
       nextHops.push_back(h);
    }
 }

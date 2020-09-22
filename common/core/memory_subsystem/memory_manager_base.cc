@@ -113,7 +113,6 @@ MemoryManagerBase::getCoreListWithMemoryControllers()
    else
    {
       std::vector<core_id_t> core_list_with_memory_controllers;
-
       if (memory_controllers_interleaving)
       {
          num_memory_controllers = (core_count + memory_controllers_interleaving - 1) / memory_controllers_interleaving; // Round up
@@ -126,6 +125,7 @@ MemoryManagerBase::getCoreListWithMemoryControllers()
       else
       {
          // All cores have memory controllers
+//	 cout << "all core have memory controller" << endl;
          for (core_id_t i = 0; i < core_count; i++)
             core_list_with_memory_controllers.push_back(i);
       }

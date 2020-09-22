@@ -176,6 +176,7 @@ UInt64 MagicServer::setPerformance(bool enabled)
 
    if (m_performance_enabled)
    {
+      printf("[LINGXI]: in /sniper/common/system/magic_server.cc::setPerformance()\n");
       printf("[SNIPER] Enabling performance models\n");
       fflush(NULL);
       t_start.start();
