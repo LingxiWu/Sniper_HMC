@@ -25,7 +25,7 @@ NetworkModelEMeshHopCounter::NetworkModelEMeshHopCounter(Network *net, EStaticNe
    _meshWidth = (SInt32) floor (sqrt(total_cores));
    _meshHeight = (SInt32) ceil (1.0 * total_cores / _meshWidth);
 
-cout << "total cores: " << to_string(total_cores) << " _meshWidth: " << to_string(_meshWidth) << " _meshHeight: " << to_string(_meshHeight) << endl;
+//cout << "total cores: " << to_string(total_cores) << " _meshWidth: " << to_string(_meshWidth) << " _meshHeight: " << to_string(_meshHeight) << endl;
 
    try
    {

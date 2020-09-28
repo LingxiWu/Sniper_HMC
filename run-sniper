@@ -137,6 +137,7 @@ def findscript(script):
 
 
 def add_config_file(filename, extension='.cfg'):
+  print(filename)  
   config_files = []
   configfile = findconfig(filename, extension)
   if not configfile:

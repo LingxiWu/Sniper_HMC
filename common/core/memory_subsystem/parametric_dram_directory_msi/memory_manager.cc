@@ -574,8 +574,7 @@ MYLOG("send msg %u %ul%u > %ul%u", msg_type, requester, sender_mem_component, re
    NetPacket packet(msg_time, SHARED_MEM_1,
          m_core_id_master, receiver,
          shmem_msg.getMsgLen(), (const void*) msg_buf);
- SInt32 pkt_len;
-  pkt_len =  getNetwork()->netSend(packet);
+  getNetwork()->netSend(packet);
 //cout << "pkt_len: " << to_string(pkt_len) << endl;
 //cout << "shmem_msg.getMsgLen(): " << to_string(shmem_msg.getMsgLen()) << endl; // 56 or 120
 //cout << "" << endl;

@@ -36,6 +36,12 @@ class NetworkModelEMeshHopByHop : public NetworkModel
 
       bool m_enabled;
 
+      // [LINGXI] record edge nodes/vaults
+      list<int> m_list_right;
+      list<int> m_list_left;
+      list<int> m_list_up;
+      list<int> m_list_down;
+
       // Lock
       Lock m_lock;
 
@@ -48,6 +54,7 @@ class NetworkModelEMeshHopByHop : public NetworkModel
       SubsecondTime m_total_packet_latency;
 
       // Functions
+      void calculateEdgeVaults();
       void computePosition(core_id_t core, SInt32 &x, SInt32 &y);
       core_id_t computeCoreId(SInt32 x, SInt32 y);
       SInt32 computeDistance(core_id_t sender, core_id_t receiver);
@@ -69,6 +76,7 @@ class NetworkModelEMeshHopByHop : public NetworkModel
       bool m_wrap_around; // false for line/mesh, true for ring/torus
 
       ComponentBandwidthPerCycle m_link_bandwidth;
+      ComponentBandwidth m_hmc_ext_link_bw;
       ComponentLatency m_hop_latency;
       bool m_broadcast_tree_enabled;
 
